@@ -1,0 +1,1496 @@
+2018-12-29 14:45:57,543-INFO-http_log.py-my_logs-日志信息：初始化数据--》借款人账户余额为:0.00
+2018-12-29 14:45:57,787-INFO-http_log.py-my_logs-日志信息：初始化数据--》投资人账户余额为:1.00
+2018-12-29 14:45:59,216-INFO-http_log.py-my_logs-日志信息：正在执行地1条用例; 用例名称:登录; 用例说明:登录成功; 用例接口:login_succeessful
+2018-12-29 14:45:59,222-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 14:45:59,226-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/login
+2018-12-29 14:45:59,231-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 14:45:59,236-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"${Income_name}","pwd":"${pwd}"}
+2018-12-29 14:45:59,240-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 14:45:59,245-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"15909318312","pwd":"1234567890"}
+2018-12-29 14:45:59,250-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 14:45:59,255-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 14:45:59,260-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 14:45:59,265-INFO-http_log.py-my_logs-日志信息：api_name:login_succeessful
+2018-12-29 14:45:59,269-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 14:45:59,275-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2018-12-29 14:45:59,412-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2018-12-29 14:45:59,417-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 14:46:00,313-INFO-http_log.py-my_logs-日志信息：数据库校验-->最新可竞标的余额:1000.00
+2018-12-29 14:46:01,588-INFO-http_log.py-my_logs-日志信息：数据库校验-->借款人的最新余额:0.00
+2018-12-29 14:46:02,277-INFO-http_log.py-my_logs-日志信息：数据库校验-->投资人的最新余额:1.00
+2018-12-29 14:46:02,626-INFO-http_log.py-my_logs-日志信息：数据库校验-->借款人最新流水记录102155
+2018-12-29 14:46:03,396-INFO-http_log.py-my_logs-日志信息：数据库校验-->投资人最新流水记录102155
+2018-12-29 14:46:03,401-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 14:46:03,405-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 14:46:08,690-INFO-http_log.py-my_logs-日志信息：初始化数据--》借款人账户余额为:0.00
+2018-12-29 14:46:08,910-INFO-http_log.py-my_logs-日志信息：初始化数据--》投资人账户余额为:1.00
+2018-12-29 14:46:09,902-INFO-http_log.py-my_logs-日志信息：正在执行地40条用例; 用例名称:竞标; 用例说明:竞标成功; 用例接口:Successful_bidding
+2018-12-29 14:46:09,907-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 14:46:09,913-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/bidLoan
+2018-12-29 14:46:09,918-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 14:46:09,922-INFO-http_log.py-my_logs-日志信息：request_data:{"memberId":"${IncomeMemberId}","password":"${pwd}","loanId":"${anId}","amount":"100"}
+2018-12-29 14:46:09,927-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 14:46:09,932-INFO-http_log.py-my_logs-日志信息：request_data:{"memberId":"1112203","password":"1234567890","loanId":"7917","amount":"100"}
+2018-12-29 14:46:09,939-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 14:46:09,943-INFO-http_log.py-my_logs-日志信息：method:POST
+2018-12-29 14:46:09,948-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 14:46:09,953-INFO-http_log.py-my_logs-日志信息：api_name:Successful_bidding
+2018-12-29 14:46:09,959-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 14:46:09,964-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"10001","data":null,"msg":"竞标成功"}
+2018-12-29 14:46:10,066-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 0, 'code': '11010', 'data': None, 'msg': '该标不在竞标中状态，无法完成投标'}
+2018-12-29 14:46:10,071-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 14:46:10,076-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 竞标成功 != 该标不在竞标中状态，无法完成投标
+2018-12-29 14:46:10,082-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 14:46:10,086-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:43:51,334-INFO-http_log.py-my_logs-日志信息：正在执行地1条用例; 用例名称:登录; 用例说明:登录成功; 用例接口:login_succeessful
+2018-12-29 15:43:51,346-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:43:51,352-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/login
+2018-12-29 15:43:51,358-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:43:51,363-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"${Income_name}","pwd":"${pwd}"}
+2018-12-29 15:43:51,368-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:43:51,373-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"15909318312","pwd":"1234567890"}
+2018-12-29 15:43:51,378-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:43:51,383-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:43:51,392-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:43:51,398-INFO-http_log.py-my_logs-日志信息：api_name:login_succeessful
+2018-12-29 15:43:51,403-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:43:51,408-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2018-12-29 15:43:51,639-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2018-12-29 15:43:51,644-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:43:51,649-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 15:43:51,655-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:44:34,736-INFO-http_log.py-my_logs-日志信息：正在执行地1条用例; 用例名称:登录; 用例说明:登录成功; 用例接口:login_succeessful
+2018-12-29 15:44:34,745-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:44:34,749-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/login
+2018-12-29 15:44:34,754-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:44:34,760-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"${Income_name}","pwd":"${pwd}"}
+2018-12-29 15:44:34,765-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:44:34,769-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"15909318312","pwd":"1234567890"}
+2018-12-29 15:44:34,775-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:44:34,779-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:44:34,784-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:44:34,792-INFO-http_log.py-my_logs-日志信息：api_name:login_succeessful
+2018-12-29 15:44:34,797-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:44:34,802-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2018-12-29 15:44:35,072-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2018-12-29 15:44:35,077-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:44:35,082-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 15:44:35,087-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:44:39,889-INFO-http_log.py-my_logs-日志信息：正在执行地2条用例; 用例名称:生成回款计划; 用例说明:生成成功; 用例接口:succeessful
+2018-12-29 15:44:39,894-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:44:39,899-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:44:39,903-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:44:39,908-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"${Full_mark}"}
+2018-12-29 15:44:39,913-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:44:39,918-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"7917"}
+2018-12-29 15:44:39,923-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:44:39,928-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:44:39,933-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:44:39,937-INFO-http_log.py-my_logs-日志信息：api_name:succeessful
+2018-12-29 15:44:39,943-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:44:39,948-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":"1","code":"10001","daate":"null","msg":"生成回款计划成功"}
+2018-12-29 15:44:40,061-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:44:40,066-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:44:40,070-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 生成回款计划成功 != 所有参数不能为空
+2018-12-29 15:44:40,075-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 15:44:40,080-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:44:44,777-INFO-http_log.py-my_logs-日志信息：正在执行地3条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:44:44,781-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:44:44,786-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:44:44,791-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:44:44,796-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"1591422335509318312"}
+2018-12-29 15:44:44,800-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:44:44,805-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"1591422335509318312"}
+2018-12-29 15:44:44,810-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:44:44,814-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:44:44,819-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:44:44,824-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:44:44,830-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:44:44,834-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 15:44:44,980-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:44:44,984-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:44:44,989-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 请根据数值参数的类型对应输入合法的数字 != 所有参数不能为空
+2018-12-29 15:44:44,994-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 15:44:44,998-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:44:49,909-INFO-http_log.py-my_logs-日志信息：正在执行地4条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:44:49,914-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:44:49,919-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:44:49,924-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:44:49,929-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"159"}
+2018-12-29 15:44:49,933-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:44:49,938-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"159"}
+2018-12-29 15:44:49,943-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:44:49,948-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:44:49,952-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:44:49,957-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:44:49,963-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:44:49,967-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20405","data":null,"msg":"该项目不在核保审批或终审状态，无法生成回款计划！"}
+2018-12-29 15:44:50,222-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:44:50,227-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:44:50,232-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 该项目不在核保审批或终审状态，无法生成回款计划！ != 所有参数不能为空
+2018-12-29 15:44:50,237-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 15:44:50,242-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:44:54,967-INFO-http_log.py-my_logs-日志信息：正在执行地5条用例; 用例名称:生成回款计划; 用例说明:项目loanId为空; 用例接口:loanId_null
+2018-12-29 15:44:54,973-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:44:54,978-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:44:54,982-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:44:54,988-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":""}
+2018-12-29 15:44:54,993-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:44:54,998-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":""}
+2018-12-29 15:44:55,003-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:44:55,008-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:44:55,013-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:44:55,017-INFO-http_log.py-my_logs-日志信息：api_name:loanId_null
+2018-12-29 15:44:55,024-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:44:55,028-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20403","data":null,"msg":"所有参数不能为空"}
+2018-12-29 15:44:57,639-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:44:57,644-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:44:57,648-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 15:44:57,653-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:45:02,426-INFO-http_log.py-my_logs-日志信息：正在执行地6条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:45:02,431-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:45:02,435-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:45:02,440-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:45:02,446-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"0"}
+2018-12-29 15:45:02,450-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:45:02,455-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"0"}
+2018-12-29 15:45:02,461-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:45:02,465-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:45:02,470-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:45:02,476-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:45:02,481-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:45:02,487-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20403","data":null,"msg":"参数错误,标loanId必须是正整数"}
+2018-12-29 15:45:02,962-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:45:02,966-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:45:02,971-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 参数错误,标loanId必须是正整数 != 所有参数不能为空
+2018-12-29 15:45:02,977-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 15:45:02,981-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:45:07,667-INFO-http_log.py-my_logs-日志信息：正在执行地7条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:45:07,671-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:45:07,676-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:45:07,681-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:45:07,686-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"-41"}
+2018-12-29 15:45:07,690-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:45:07,696-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"-41"}
+2018-12-29 15:45:07,700-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:45:07,705-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:45:07,710-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:45:07,715-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:45:07,721-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:45:07,726-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20403","data":null,"msg":"参数错误,标loanId必须是正整数"}
+2018-12-29 15:45:08,843-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:45:08,848-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:45:08,853-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 参数错误,标loanId必须是正整数 != 所有参数不能为空
+2018-12-29 15:45:08,858-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 15:45:08,864-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:45:13,632-INFO-http_log.py-my_logs-日志信息：正在执行地8条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:45:13,637-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:45:13,642-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:45:13,647-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:45:13,652-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"2.12"}
+2018-12-29 15:45:13,657-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:45:13,661-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"2.12"}
+2018-12-29 15:45:13,666-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:45:13,671-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:45:13,678-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:45:13,685-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:45:13,690-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:45:13,694-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 15:45:13,897-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:45:13,902-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:45:13,907-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 请根据数值参数的类型对应输入合法的数字 != 所有参数不能为空
+2018-12-29 15:45:13,911-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 15:45:13,916-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:45:18,660-INFO-http_log.py-my_logs-日志信息：正在执行地9条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:45:18,665-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:45:18,670-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:45:18,675-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:45:18,680-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"计算的覅不少地方"}
+2018-12-29 15:45:18,684-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:45:18,689-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"计算的覅不少地方"}
+2018-12-29 15:45:18,693-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:45:18,698-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:45:18,703-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:45:18,708-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:45:18,713-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:45:18,718-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 15:45:18,828-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:45:18,833-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:45:18,838-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 请根据数值参数的类型对应输入合法的数字 != 所有参数不能为空
+2018-12-29 15:45:18,842-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 15:45:18,847-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:45:24,325-INFO-http_log.py-my_logs-日志信息：正在执行地10条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:45:24,333-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:45:24,339-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:45:24,346-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:45:24,352-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"sjsdfiusdbf"}
+2018-12-29 15:45:24,360-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:45:24,366-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"sjsdfiusdbf"}
+2018-12-29 15:45:24,375-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:45:24,380-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:45:24,386-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:45:24,393-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:45:24,398-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:45:24,402-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 15:45:24,502-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:45:24,508-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:45:24,515-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 请根据数值参数的类型对应输入合法的数字 != 所有参数不能为空
+2018-12-29 15:45:24,523-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 15:45:24,528-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:45:29,795-INFO-http_log.py-my_logs-日志信息：正在执行地11条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:45:29,800-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:45:29,805-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:45:29,810-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:45:29,815-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"#$%^$32424%%%#"}
+2018-12-29 15:45:29,819-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:45:29,825-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"#$%^$32424%%%#"}
+2018-12-29 15:45:29,830-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:45:29,835-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:45:29,839-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:45:29,844-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:45:29,850-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:45:29,854-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 15:45:29,961-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:45:29,966-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:45:29,971-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 请根据数值参数的类型对应输入合法的数字 != 所有参数不能为空
+2018-12-29 15:45:29,976-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 15:45:29,980-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:45:34,979-INFO-http_log.py-my_logs-日志信息：正在执行地12条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:45:34,983-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:45:34,989-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:45:34,993-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:45:34,998-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"7805"}
+2018-12-29 15:45:35,002-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:45:35,008-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"7805"}
+2018-12-29 15:45:35,012-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:45:35,017-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:45:35,022-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:45:35,027-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:45:35,032-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:45:35,037-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20405","data":null,"msg":"该项目不在核保审批或终审状态，无法生成回款计划！"}
+2018-12-29 15:45:35,386-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:45:35,391-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:45:35,396-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 该项目不在核保审批或终审状态，无法生成回款计划！ != 所有参数不能为空
+2018-12-29 15:45:35,401-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 15:45:35,406-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:45:51,873-INFO-http_log.py-my_logs-日志信息：正在执行地1条用例; 用例名称:登录; 用例说明:登录成功; 用例接口:login_succeessful
+2018-12-29 15:45:51,882-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:45:51,888-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/login
+2018-12-29 15:45:51,893-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:45:51,898-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"${Income_name}","pwd":"${pwd}"}
+2018-12-29 15:45:51,903-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:45:51,908-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"15909318312","pwd":"1234567890"}
+2018-12-29 15:45:51,913-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:45:51,917-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:45:51,924-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:45:51,930-INFO-http_log.py-my_logs-日志信息：api_name:login_succeessful
+2018-12-29 15:45:51,935-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:45:51,940-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2018-12-29 15:45:52,181-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2018-12-29 15:45:52,186-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:45:52,191-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 15:45:52,196-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:45:56,976-INFO-http_log.py-my_logs-日志信息：正在执行地2条用例; 用例名称:生成回款计划; 用例说明:生成成功; 用例接口:succeessful
+2018-12-29 15:45:56,980-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:45:56,985-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:45:56,990-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:45:56,995-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"${Full_mark}"}
+2018-12-29 15:45:56,999-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:45:57,004-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"7917"}
+2018-12-29 15:45:57,009-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:45:57,014-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:45:57,018-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:45:57,024-INFO-http_log.py-my_logs-日志信息：api_name:succeessful
+2018-12-29 15:45:57,030-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:45:57,035-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":"1","code":"10001","daate":"null","msg":"生成回款计划成功"}
+2018-12-29 15:45:57,164-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:45:57,169-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:45:57,174-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 生成回款计划成功 != 所有参数不能为空
+2018-12-29 15:45:57,180-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 15:45:57,185-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:46:01,868-INFO-http_log.py-my_logs-日志信息：正在执行地3条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:46:01,873-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:46:01,878-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:46:01,883-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:46:01,888-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"1591422335509318312"}
+2018-12-29 15:46:01,893-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:46:01,898-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"1591422335509318312"}
+2018-12-29 15:46:01,902-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:46:01,907-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:46:01,912-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:46:01,917-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:46:01,924-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:46:01,929-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 15:46:02,224-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:46:02,229-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:46:02,233-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 请根据数值参数的类型对应输入合法的数字 != 所有参数不能为空
+2018-12-29 15:46:02,238-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 15:46:02,243-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:50:51,001-INFO-http_log.py-my_logs-日志信息：正在执行地1条用例; 用例名称:登录; 用例说明:登录成功; 用例接口:login_succeessful
+2018-12-29 15:50:51,011-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:50:51,016-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/login
+2018-12-29 15:50:51,022-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:50:51,027-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"${Income_name}","pwd":"${pwd}"}
+2018-12-29 15:50:51,031-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:50:51,038-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"15909318312","pwd":"1234567890"}
+2018-12-29 15:50:51,043-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:50:51,047-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:50:51,054-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:50:51,062-INFO-http_log.py-my_logs-日志信息：api_name:login_succeessful
+2018-12-29 15:50:51,066-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:50:51,071-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2018-12-29 15:50:51,223-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2018-12-29 15:50:51,229-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:50:51,234-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 15:50:51,239-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:50:56,005-INFO-http_log.py-my_logs-日志信息：正在执行地2条用例; 用例名称:生成回款计划; 用例说明:生成成功; 用例接口:succeessful
+2018-12-29 15:50:56,011-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:50:56,017-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:50:56,023-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:50:56,028-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"${Full_mark}"}
+2018-12-29 15:50:56,033-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:50:56,041-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"7917"}
+2018-12-29 15:50:56,046-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:50:56,051-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:50:56,058-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:50:56,065-INFO-http_log.py-my_logs-日志信息：api_name:succeessful
+2018-12-29 15:50:56,069-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:50:56,074-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":"1","code":"10001","daate":"null","msg":"生成回款计划成功"}
+2018-12-29 15:50:56,211-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:50:56,216-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:50:56,221-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 15:50:56,226-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:51:00,851-INFO-http_log.py-my_logs-日志信息：正在执行地3条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:51:00,856-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:51:00,861-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:51:00,865-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:51:00,870-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"1591422335509318312"}
+2018-12-29 15:51:00,875-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:51:00,880-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"1591422335509318312"}
+2018-12-29 15:51:00,885-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:51:00,889-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:51:00,895-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:51:00,900-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:51:00,907-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:51:00,912-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 15:51:01,053-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:51:01,058-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:51:01,063-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 15:51:01,068-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:51:05,817-INFO-http_log.py-my_logs-日志信息：正在执行地4条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:51:05,822-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:51:05,827-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:51:05,832-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:51:05,837-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"159"}
+2018-12-29 15:51:05,843-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:51:05,848-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"159"}
+2018-12-29 15:51:05,852-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:51:05,857-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:51:05,862-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:51:05,866-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:51:05,873-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:51:05,878-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20405","data":null,"msg":"该项目不在核保审批或终审状态，无法生成回款计划！"}
+2018-12-29 15:51:05,965-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:51:05,970-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:51:05,975-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 15:51:05,980-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:51:10,635-INFO-http_log.py-my_logs-日志信息：正在执行地5条用例; 用例名称:生成回款计划; 用例说明:项目loanId为空; 用例接口:loanId_null
+2018-12-29 15:51:10,640-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:51:10,645-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:51:10,649-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:51:10,654-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":""}
+2018-12-29 15:51:10,659-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:51:10,664-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":""}
+2018-12-29 15:51:10,668-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:51:10,673-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:51:10,678-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:51:10,682-INFO-http_log.py-my_logs-日志信息：api_name:loanId_null
+2018-12-29 15:51:10,690-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:51:10,696-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20403","data":null,"msg":"所有参数不能为空"}
+2018-12-29 15:51:11,090-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:51:11,095-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:51:11,100-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 15:51:11,104-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:51:15,725-INFO-http_log.py-my_logs-日志信息：正在执行地6条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:51:15,729-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:51:15,734-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:51:15,739-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:51:15,744-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"0"}
+2018-12-29 15:51:15,748-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:51:15,753-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"0"}
+2018-12-29 15:51:15,758-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:51:15,763-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:51:15,768-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:51:15,773-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:51:15,780-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:51:15,789-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20403","data":null,"msg":"参数错误,标loanId必须是正整数"}
+2018-12-29 15:51:15,890-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:51:15,894-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:51:15,900-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 15:51:15,905-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:51:20,576-INFO-http_log.py-my_logs-日志信息：正在执行地7条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:51:20,582-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:51:20,586-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:51:20,591-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:51:20,596-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"-41"}
+2018-12-29 15:51:20,601-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:51:20,606-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"-41"}
+2018-12-29 15:51:20,611-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:51:20,616-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:51:20,621-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:51:20,626-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:51:20,633-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:51:20,637-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20403","data":null,"msg":"参数错误,标loanId必须是正整数"}
+2018-12-29 15:51:20,768-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:51:20,772-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:51:20,778-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 15:51:20,782-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:51:25,407-INFO-http_log.py-my_logs-日志信息：正在执行地8条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:51:25,414-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:51:25,420-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:51:25,425-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:51:25,429-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"2.12"}
+2018-12-29 15:51:25,434-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:51:25,439-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"2.12"}
+2018-12-29 15:51:25,444-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:51:25,449-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:51:25,454-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:51:25,459-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:51:25,466-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:51:25,471-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 15:51:25,798-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:51:25,802-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:51:25,807-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 15:51:25,812-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:51:30,476-INFO-http_log.py-my_logs-日志信息：正在执行地9条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:51:30,481-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:51:30,485-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:51:30,490-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:51:30,495-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"计算的覅不少地方"}
+2018-12-29 15:51:30,500-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:51:30,505-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"计算的覅不少地方"}
+2018-12-29 15:51:30,510-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:51:30,515-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:51:30,520-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:51:30,527-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:51:30,532-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:51:30,536-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 15:51:30,651-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:51:30,655-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:51:30,661-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 15:51:30,665-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:51:35,354-INFO-http_log.py-my_logs-日志信息：正在执行地10条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:51:35,359-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:51:35,363-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:51:35,368-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:51:35,373-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"sjsdfiusdbf"}
+2018-12-29 15:51:35,378-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:51:35,383-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"sjsdfiusdbf"}
+2018-12-29 15:51:35,388-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:51:35,393-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:51:35,399-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:51:35,405-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:51:35,411-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:51:35,415-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 15:51:35,639-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:51:35,643-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:51:35,649-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 15:51:35,654-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:51:40,392-INFO-http_log.py-my_logs-日志信息：正在执行地11条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:51:40,397-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:51:40,401-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:51:40,407-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:51:40,412-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"#$%^$32424%%%#"}
+2018-12-29 15:51:40,417-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:51:40,421-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"#$%^$32424%%%#"}
+2018-12-29 15:51:40,426-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:51:40,431-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:51:40,436-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:51:40,441-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:51:40,447-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:51:40,451-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 15:51:40,545-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:51:40,549-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:51:40,556-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 15:51:40,561-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:51:45,274-INFO-http_log.py-my_logs-日志信息：正在执行地12条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:51:45,279-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:51:45,284-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:51:45,289-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:51:45,294-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"7805"}
+2018-12-29 15:51:45,298-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:51:45,303-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"7805"}
+2018-12-29 15:51:45,308-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:51:45,313-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:51:45,318-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:51:45,324-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:51:45,329-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:51:45,334-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20405","data":null,"msg":"该项目不在核保审批或终审状态，无法生成回款计划！"}
+2018-12-29 15:51:46,022-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:51:46,027-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:51:46,032-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 15:51:46,037-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:55:36,363-INFO-http_log.py-my_logs-日志信息：正在执行地1条用例; 用例名称:登录; 用例说明:登录成功; 用例接口:login_succeessful
+2018-12-29 15:55:36,372-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:55:36,378-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/login
+2018-12-29 15:55:36,383-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:55:36,388-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"${Income_name}","pwd":"${pwd}"}
+2018-12-29 15:55:36,393-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:55:36,398-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"15909318312","pwd":"1234567890"}
+2018-12-29 15:55:36,402-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:55:36,407-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:55:36,413-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:55:36,420-INFO-http_log.py-my_logs-日志信息：api_name:login_succeessful
+2018-12-29 15:55:36,426-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:55:36,430-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2018-12-29 15:55:36,578-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2018-12-29 15:55:36,583-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:55:36,588-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 15:55:36,593-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:55:41,328-INFO-http_log.py-my_logs-日志信息：正在执行地2条用例; 用例名称:生成回款计划; 用例说明:生成成功; 用例接口:succeessful
+2018-12-29 15:55:41,334-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:55:41,342-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:55:41,348-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:55:41,353-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"${Full_mark}"}
+2018-12-29 15:55:41,361-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:55:41,369-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"7917"}
+2018-12-29 15:55:41,377-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:55:41,384-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:55:41,389-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:55:41,395-INFO-http_log.py-my_logs-日志信息：api_name:succeessful
+2018-12-29 15:55:41,400-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:55:41,405-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":"1","code":"10001","daate":"null","msg":"生成回款计划成功"}
+2018-12-29 15:55:41,540-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:55:41,545-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:55:41,550-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 生成回款计划成功 != 所有参数不能为空
+2018-12-29 15:55:41,556-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 15:55:41,560-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:55:46,312-INFO-http_log.py-my_logs-日志信息：正在执行地3条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:55:46,318-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:55:46,323-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:55:46,327-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:55:46,333-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"1591422335509318312"}
+2018-12-29 15:55:46,337-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:55:46,342-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"1591422335509318312"}
+2018-12-29 15:55:46,347-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:55:46,352-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:55:46,356-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:55:46,362-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:55:46,367-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:55:46,372-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 15:55:46,483-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:55:46,487-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:55:46,492-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 请根据数值参数的类型对应输入合法的数字 != 所有参数不能为空
+2018-12-29 15:55:46,497-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 15:55:46,502-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:55:51,250-INFO-http_log.py-my_logs-日志信息：正在执行地4条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:55:51,258-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:55:51,264-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:55:51,269-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:55:51,274-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"159"}
+2018-12-29 15:55:51,279-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:55:51,286-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"159"}
+2018-12-29 15:55:51,292-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:55:51,301-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:55:51,308-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:55:51,316-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:55:51,320-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:55:51,326-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20405","data":null,"msg":"该项目不在核保审批或终审状态，无法生成回款计划！"}
+2018-12-29 15:55:51,435-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:55:51,440-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:55:51,446-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 该项目不在核保审批或终审状态，无法生成回款计划！ != 所有参数不能为空
+2018-12-29 15:55:51,450-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 15:55:51,457-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:55:56,173-INFO-http_log.py-my_logs-日志信息：正在执行地5条用例; 用例名称:生成回款计划; 用例说明:项目loanId为空; 用例接口:loanId_null
+2018-12-29 15:55:56,178-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:55:56,183-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:55:56,188-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:55:56,192-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":""}
+2018-12-29 15:55:56,197-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:55:56,202-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":""}
+2018-12-29 15:55:56,207-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:55:56,212-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:55:56,218-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:55:56,224-INFO-http_log.py-my_logs-日志信息：api_name:loanId_null
+2018-12-29 15:55:56,229-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:55:56,233-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20403","data":null,"msg":"所有参数不能为空"}
+2018-12-29 15:55:56,331-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:55:56,336-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:55:56,341-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 15:55:56,346-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:56:01,072-INFO-http_log.py-my_logs-日志信息：正在执行地6条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:56:01,077-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:56:01,082-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:56:01,087-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:56:01,091-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"0"}
+2018-12-29 15:56:01,096-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:56:01,101-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"0"}
+2018-12-29 15:56:01,105-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:56:01,110-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:56:01,115-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:56:01,120-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:56:01,125-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:56:01,130-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20403","data":null,"msg":"参数错误,标loanId必须是正整数"}
+2018-12-29 15:56:01,229-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:56:01,234-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:56:01,239-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 参数错误,标loanId必须是正整数 != 所有参数不能为空
+2018-12-29 15:56:01,244-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 15:56:01,248-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:56:39,907-INFO-http_log.py-my_logs-日志信息：正在执行地1条用例; 用例名称:登录; 用例说明:登录成功; 用例接口:login_succeessful
+2018-12-29 15:56:39,917-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:56:39,922-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/login
+2018-12-29 15:56:39,926-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:56:39,931-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"${Income_name}","pwd":"${pwd}"}
+2018-12-29 15:56:39,936-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:56:39,941-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"15909318312","pwd":"1234567890"}
+2018-12-29 15:56:39,947-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:56:39,951-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:56:39,958-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:56:39,964-INFO-http_log.py-my_logs-日志信息：api_name:login_succeessful
+2018-12-29 15:56:39,969-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:56:39,974-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2018-12-29 15:56:40,110-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2018-12-29 15:56:40,115-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:56:40,121-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 15:56:40,125-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:56:44,829-INFO-http_log.py-my_logs-日志信息：正在执行地2条用例; 用例名称:生成回款计划; 用例说明:生成成功; 用例接口:succeessful
+2018-12-29 15:56:44,835-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:56:44,839-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:56:44,844-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:56:44,849-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"${Full_mark}"}
+2018-12-29 15:56:44,854-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:56:44,859-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"7917"}
+2018-12-29 15:56:44,864-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:56:44,869-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:56:44,874-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:56:44,879-INFO-http_log.py-my_logs-日志信息：api_name:succeessful
+2018-12-29 15:56:44,884-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:56:44,890-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":"1","code":"10001","daate":"null","msg":"生成回款计划成功"}
+2018-12-29 15:56:45,007-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:56:45,011-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:56:45,017-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 生成回款计划成功 != 所有参数不能为空
+2018-12-29 15:56:45,022-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 15:56:45,026-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 15:56:49,616-INFO-http_log.py-my_logs-日志信息：正在执行地3条用例; 用例名称:生成回款计划; 用例说明:项目loanId; 用例接口:loanId_error
+2018-12-29 15:56:49,621-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 15:56:49,626-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 15:56:49,631-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 15:56:49,636-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"1591422335509318312"}
+2018-12-29 15:56:49,640-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 15:56:49,645-INFO-http_log.py-my_logs-日志信息：request_data:{"loanId":"1591422335509318312"}
+2018-12-29 15:56:49,650-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 15:56:49,654-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 15:56:49,659-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 15:56:49,664-INFO-http_log.py-my_logs-日志信息：api_name:loanId_error
+2018-12-29 15:56:49,669-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 15:56:49,675-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 15:56:49,773-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 15:56:49,777-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 15:56:49,782-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 请根据数值参数的类型对应输入合法的数字 != 所有参数不能为空
+2018-12-29 15:56:49,787-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 15:56:49,792-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 16:00:06,236-INFO-http_log.py-my_logs-日志信息：正在执行地1条用例; 用例名称:登录; 用例说明:登录成功; 用例接口:login_succeessful
+2018-12-29 16:00:06,245-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 16:00:06,250-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/login
+2018-12-29 16:00:06,255-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 16:00:06,260-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"15914223355","pwd":"1234567890"}
+2018-12-29 16:00:06,265-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 16:00:06,271-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"15914223355","pwd":"1234567890"}
+2018-12-29 16:00:06,275-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 16:00:06,280-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 16:00:06,286-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 16:00:06,292-INFO-http_log.py-my_logs-日志信息：api_name:login_succeessful
+2018-12-29 16:00:06,298-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 16:00:06,304-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2018-12-29 16:00:06,675-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2018-12-29 16:00:06,680-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 16:00:06,685-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 16:00:06,689-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 16:00:11,444-INFO-http_log.py-my_logs-日志信息：正在执行地2条用例; 用例名称:生成回款计划; 用例说明:生成成功; 用例接口:succeessful
+2018-12-29 16:00:11,450-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 16:00:11,454-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 16:00:11,460-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 16:00:11,464-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"${Full_mark}"}
+2018-12-29 16:00:11,469-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 16:00:11,474-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"7917"}
+2018-12-29 16:00:11,479-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 16:00:11,483-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 16:00:11,488-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 16:00:11,493-INFO-http_log.py-my_logs-日志信息：api_name:succeessful
+2018-12-29 16:00:11,498-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 16:00:11,503-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":"1","code":"10001","daate":"null","msg":"生成回款计划成功"}
+2018-12-29 16:00:11,905-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '10001', 'data': [{'id': None, 'investId': '5381', 'createTime': '2018-12-29 16:00:11', 'terms': '1', 'unfinishedInterest': '1.5', 'unfinishedPrincipal': '100.00', 'repaymentDate': '2019-01-28 16:00:11', 'actualRepaymentDate': None, 'status': '0'}, {'id': None, 'investId': '5380', 'createTime': '2018-12-29 16:00:11', 'terms': '1', 'unfinishedInterest': '1.5', 'unfinishedPrincipal': '100.00', 'repaymentDate': '2019-01-28 16:00:11', 'actualRepaymentDate': None, 'status': '0'}, {'id': None, 'investId': '5379', 'createTime': '2018-12-29 16:00:11', 'terms': '1', 'unfinishedInterest': '1.5', 'unfinishedPrincipal': '100.00', 'repaymentDate': '2019-01-28 16:00:11', 'actualRepaymentDate': None, 'status': '0'}, {'id': None, 'investId': '5378', 'createTime': '2018-12-29 16:00:11', 'terms': '1', 'unfinishedInterest': '1.5', 'unfinishedPrincipal': '100.00', 'repaymentDate': '2019-01-28 16:00:11', 'actualRepaymentDate': None, 'status': '0'}, {'id': None, 'investId': '5377', 'createTime': '2018-12-29 16:00:11', 'terms': '1', 'unfinishedInterest': '1.5', 'unfinishedPrincipal': '100.00', 'repaymentDate': '2019-01-28 16:00:11', 'actualRepaymentDate': None, 'status': '0'}, {'id': None, 'investId': '5376', 'createTime': '2018-12-29 16:00:11', 'terms': '1', 'unfinishedInterest': '1.5', 'unfinishedPrincipal': '100.00', 'repaymentDate': '2019-01-28 16:00:11', 'actualRepaymentDate': None, 'status': '0'}, {'id': None, 'investId': '5375', 'createTime': '2018-12-29 16:00:11', 'terms': '1', 'unfinishedInterest': '1.5', 'unfinishedPrincipal': '100.00', 'repaymentDate': '2019-01-28 16:00:11', 'actualRepaymentDate': None, 'status': '0'}, {'id': None, 'investId': '5374', 'createTime': '2018-12-29 16:00:11', 'terms': '1', 'unfinishedInterest': '1.5', 'unfinishedPrincipal': '100.00', 'repaymentDate': '2019-01-28 16:00:11', 'actualRepaymentDate': None, 'status': '0'}, {'id': None, 'investId': '5373', 'createTime': '2018-12-29 16:00:11', 'terms': '1', 'unfinishedInterest': '1.5', 'unfinishedPrincipal': '100.00', 'repaymentDate': '2019-01-28 16:00:11', 'actualRepaymentDate': None, 'status': '0'}, {'id': None, 'investId': '5372', 'createTime': '2018-12-29 16:00:11', 'terms': '1', 'unfinishedInterest': '1.5', 'unfinishedPrincipal': '100.00', 'repaymentDate': '2019-01-28 16:00:11', 'actualRepaymentDate': None, 'status': '0'}], 'msg': '生成回款计划成功'}
+2018-12-29 16:00:11,910-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 16:00:11,915-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 16:00:11,919-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 16:00:16,593-INFO-http_log.py-my_logs-日志信息：正在执行地3条用例; 用例名称:生成回款计划; 用例说明:项目id; 用例接口:loanId _error
+2018-12-29 16:00:16,598-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 16:00:16,603-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 16:00:16,608-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 16:00:16,613-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"1591422335509318312"}
+2018-12-29 16:00:16,618-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 16:00:16,623-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"1591422335509318312"}
+2018-12-29 16:00:16,628-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 16:00:16,632-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 16:00:16,638-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 16:00:16,643-INFO-http_log.py-my_logs-日志信息：api_name:loanId _error
+2018-12-29 16:00:16,650-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 16:00:16,655-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 16:00:16,871-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 0, 'code': '20406', 'data': None, 'msg': '请根据数值参数的类型对应输入合法的数字'}
+2018-12-29 16:00:16,876-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 16:00:16,881-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 16:00:16,885-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 16:00:21,655-INFO-http_log.py-my_logs-日志信息：正在执行地4条用例; 用例名称:生成回款计划; 用例说明:项目id; 用例接口:loanId _error
+2018-12-29 16:00:21,660-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 16:00:21,665-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 16:00:21,670-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 16:00:21,675-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"159"}
+2018-12-29 16:00:21,679-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 16:00:21,684-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"159"}
+2018-12-29 16:00:21,689-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 16:00:21,694-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 16:00:21,699-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 16:00:21,705-INFO-http_log.py-my_logs-日志信息：api_name:loanId _error
+2018-12-29 16:00:21,711-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 16:00:21,716-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20405","data":null,"msg":"该项目不在核保审批或终审状态，无法生成回款计划！"}
+2018-12-29 16:00:21,876-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '不存在该项目，生成回款计划失败'}
+2018-12-29 16:00:21,881-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 16:00:21,886-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 该项目不在核保审批或终审状态，无法生成回款计划！ != 不存在该项目，生成回款计划失败
+2018-12-29 16:00:21,891-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 16:00:21,896-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 16:00:26,534-INFO-http_log.py-my_logs-日志信息：正在执行地5条用例; 用例名称:生成回款计划; 用例说明:项目id为空; 用例接口:loanId_null
+2018-12-29 16:00:26,540-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 16:00:26,545-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 16:00:26,549-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 16:00:26,554-INFO-http_log.py-my_logs-日志信息：request_data:{"id":""}
+2018-12-29 16:00:26,559-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 16:00:26,564-INFO-http_log.py-my_logs-日志信息：request_data:{"id":""}
+2018-12-29 16:00:26,568-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 16:00:26,573-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 16:00:26,578-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 16:00:26,583-INFO-http_log.py-my_logs-日志信息：api_name:loanId_null
+2018-12-29 16:00:26,589-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 16:00:26,595-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20403","data":null,"msg":"所有参数不能为空"}
+2018-12-29 16:00:26,694-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 16:00:26,698-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 16:00:26,702-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 16:00:26,707-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 16:00:31,418-INFO-http_log.py-my_logs-日志信息：正在执行地6条用例; 用例名称:生成回款计划; 用例说明:项目id; 用例接口:loanId _error
+2018-12-29 16:00:31,423-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 16:00:31,428-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 16:00:31,433-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 16:00:31,437-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"0"}
+2018-12-29 16:00:31,442-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 16:00:31,447-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"0"}
+2018-12-29 16:00:31,451-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 16:00:31,456-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 16:00:31,461-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 16:00:31,465-INFO-http_log.py-my_logs-日志信息：api_name:loanId _error
+2018-12-29 16:00:31,472-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 16:00:31,477-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20403","data":null,"msg":"参数错误,标id必须是正整数"}
+2018-12-29 16:00:31,874-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '参数错误,标id必须是正整数'}
+2018-12-29 16:00:31,879-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 16:00:31,884-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 16:00:31,889-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 16:00:36,605-INFO-http_log.py-my_logs-日志信息：正在执行地7条用例; 用例名称:生成回款计划; 用例说明:项目id; 用例接口:loanId _error
+2018-12-29 16:00:36,611-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 16:00:36,615-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 16:00:36,620-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 16:00:36,625-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"-41"}
+2018-12-29 16:00:36,630-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 16:00:36,634-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"-41"}
+2018-12-29 16:00:36,639-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 16:00:36,644-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 16:00:36,649-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 16:00:36,654-INFO-http_log.py-my_logs-日志信息：api_name:loanId _error
+2018-12-29 16:00:36,659-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 16:00:36,666-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20403","data":null,"msg":"参数错误,标id必须是正整数"}
+2018-12-29 16:00:36,790-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '参数错误,标id必须是正整数'}
+2018-12-29 16:00:36,794-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 16:00:36,799-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 16:00:36,803-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 16:00:41,514-INFO-http_log.py-my_logs-日志信息：正在执行地8条用例; 用例名称:生成回款计划; 用例说明:项目id; 用例接口:loanId _error
+2018-12-29 16:00:41,519-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 16:00:41,524-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 16:00:41,529-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 16:00:41,533-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"2.12"}
+2018-12-29 16:00:41,538-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 16:00:41,543-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"2.12"}
+2018-12-29 16:00:41,547-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 16:00:41,552-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 16:00:41,557-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 16:00:41,562-INFO-http_log.py-my_logs-日志信息：api_name:loanId _error
+2018-12-29 16:00:41,568-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 16:00:41,574-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 16:00:41,685-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 0, 'code': '20406', 'data': None, 'msg': '请根据数值参数的类型对应输入合法的数字'}
+2018-12-29 16:00:41,689-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 16:00:41,694-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 16:00:41,699-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 16:00:46,562-INFO-http_log.py-my_logs-日志信息：正在执行地9条用例; 用例名称:生成回款计划; 用例说明:项目id; 用例接口:loanId _error
+2018-12-29 16:00:46,569-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 16:00:46,575-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 16:00:46,580-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 16:00:46,585-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"计算的覅不少地方"}
+2018-12-29 16:00:46,590-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 16:00:46,595-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"计算的覅不少地方"}
+2018-12-29 16:00:46,600-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 16:00:46,605-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 16:00:46,610-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 16:00:46,617-INFO-http_log.py-my_logs-日志信息：api_name:loanId _error
+2018-12-29 16:00:46,623-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 16:00:46,628-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 16:00:52,628-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 0, 'code': '20406', 'data': None, 'msg': '请根据数值参数的类型对应输入合法的数字'}
+2018-12-29 16:00:52,633-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 16:00:52,637-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 16:00:52,642-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 16:00:57,525-INFO-http_log.py-my_logs-日志信息：正在执行地10条用例; 用例名称:生成回款计划; 用例说明:项目id; 用例接口:loanId _error
+2018-12-29 16:00:57,532-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 16:00:57,536-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 16:00:57,541-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 16:00:57,546-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"sjsdfiusdbf"}
+2018-12-29 16:00:57,550-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 16:00:57,555-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"sjsdfiusdbf"}
+2018-12-29 16:00:57,560-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 16:00:57,564-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 16:00:57,570-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 16:00:57,636-INFO-http_log.py-my_logs-日志信息：api_name:loanId _error
+2018-12-29 16:00:57,641-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 16:00:57,646-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 16:00:57,731-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 0, 'code': '20406', 'data': None, 'msg': '请根据数值参数的类型对应输入合法的数字'}
+2018-12-29 16:00:57,736-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 16:00:57,740-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 16:00:57,745-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 16:01:02,770-INFO-http_log.py-my_logs-日志信息：正在执行地11条用例; 用例名称:生成回款计划; 用例说明:项目id; 用例接口:loanId _error
+2018-12-29 16:01:02,775-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 16:01:02,780-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 16:01:02,785-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 16:01:02,790-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"#$%^$32424%%%#"}
+2018-12-29 16:01:02,795-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 16:01:02,799-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"#$%^$32424%%%#"}
+2018-12-29 16:01:02,805-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 16:01:02,810-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 16:01:02,815-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 16:01:02,820-INFO-http_log.py-my_logs-日志信息：api_name:loanId _error
+2018-12-29 16:01:02,826-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 16:01:02,832-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 16:01:02,923-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 0, 'code': '20406', 'data': None, 'msg': '请根据数值参数的类型对应输入合法的数字'}
+2018-12-29 16:01:02,927-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 16:01:02,932-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 16:01:02,937-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 16:01:07,627-INFO-http_log.py-my_logs-日志信息：正在执行地12条用例; 用例名称:生成回款计划; 用例说明:项目id; 用例接口:loanId _error
+2018-12-29 16:01:07,632-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 16:01:07,637-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 16:01:07,643-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 16:01:07,648-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"7805"}
+2018-12-29 16:01:07,652-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 16:01:07,657-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"7805"}
+2018-12-29 16:01:07,663-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 16:01:07,667-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 16:01:07,672-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 16:01:07,678-INFO-http_log.py-my_logs-日志信息：api_name:loanId _error
+2018-12-29 16:01:07,689-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 16:01:07,706-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20405","data":null,"msg":"该项目不在核保审批或终审状态，无法生成回款计划！"}
+2018-12-29 16:01:09,219-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20405', 'data': None, 'msg': '该项目不在核保审批或终审状态，无法生成回款计划！'}
+2018-12-29 16:01:09,224-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 16:01:09,228-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 16:01:09,233-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:25:45,405-INFO-http_log.py-my_logs-日志信息：正在执行地1条用例; 用例名称:登录; 用例说明:登录成功; 用例接口:login_succeessful
+2018-12-29 17:25:45,414-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:25:45,419-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/login
+2018-12-29 17:25:45,425-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:25:45,429-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"15914223355","pwd":"1234567890"}
+2018-12-29 17:25:45,434-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:25:45,439-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"15914223355","pwd":"1234567890"}
+2018-12-29 17:25:45,444-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:25:45,450-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:25:45,455-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:25:45,459-INFO-http_log.py-my_logs-日志信息：api_name:login_succeessful
+2018-12-29 17:25:45,465-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:25:45,469-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2018-12-29 17:25:57,732-INFO-http_log.py-my_logs-日志信息：正在执行地3条用例; 用例名称:生成回款计划; 用例说明:项目id; 用例接口:loanId _error
+2018-12-29 17:25:57,737-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:25:57,742-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 17:25:57,747-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:25:57,752-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"1591422335509318312"}
+2018-12-29 17:25:57,757-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:25:57,762-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"1591422335509318312"}
+2018-12-29 17:25:57,767-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:25:57,772-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:25:57,778-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:25:57,784-INFO-http_log.py-my_logs-日志信息：api_name:loanId _error
+2018-12-29 17:25:57,789-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:25:57,794-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 17:25:58,460-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 0, 'code': None, 'data': None, 'msg': '抱歉，请先登录。'}
+2018-12-29 17:25:58,465-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:25:58,470-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 请根据数值参数的类型对应输入合法的数字 != 抱歉，请先登录。
+2018-12-29 17:25:58,475-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:25:58,482-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:26:03,640-INFO-http_log.py-my_logs-日志信息：正在执行地4条用例; 用例名称:生成回款计划; 用例说明:项目id; 用例接口:loanId _error
+2018-12-29 17:26:03,646-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:26:03,651-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 17:26:03,658-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:26:03,663-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"159"}
+2018-12-29 17:26:03,668-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:26:03,673-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"159"}
+2018-12-29 17:26:03,678-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:26:03,683-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:26:03,688-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:26:03,692-INFO-http_log.py-my_logs-日志信息：api_name:loanId _error
+2018-12-29 17:26:03,697-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:26:03,702-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20403","data":null,"msg":"不存在该项目，生成回款计划失败"}
+2018-12-29 17:26:03,864-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 0, 'code': None, 'data': None, 'msg': '抱歉，请先登录。'}
+2018-12-29 17:26:03,869-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:26:03,874-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 不存在该项目，生成回款计划失败 != 抱歉，请先登录。
+2018-12-29 17:26:03,879-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:26:03,889-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:26:09,035-INFO-http_log.py-my_logs-日志信息：正在执行地5条用例; 用例名称:生成回款计划; 用例说明:项目id为空; 用例接口:loanId_null
+2018-12-29 17:26:09,039-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:26:09,044-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 17:26:09,050-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:26:09,055-INFO-http_log.py-my_logs-日志信息：request_data:{"id":""}
+2018-12-29 17:26:09,060-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:26:09,065-INFO-http_log.py-my_logs-日志信息：request_data:{"id":""}
+2018-12-29 17:26:09,073-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:26:09,078-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:26:09,082-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:26:09,087-INFO-http_log.py-my_logs-日志信息：api_name:loanId_null
+2018-12-29 17:26:09,092-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:26:09,097-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20403","data":null,"msg":"所有参数不能为空"}
+2018-12-29 17:26:09,308-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 0, 'code': None, 'data': None, 'msg': '抱歉，请先登录。'}
+2018-12-29 17:26:09,313-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:26:09,318-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 所有参数不能为空 != 抱歉，请先登录。
+2018-12-29 17:26:09,324-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:26:09,330-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:26:14,662-INFO-http_log.py-my_logs-日志信息：正在执行地6条用例; 用例名称:生成回款计划; 用例说明:项目id; 用例接口:loanId _error
+2018-12-29 17:26:14,666-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:26:14,672-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 17:26:14,676-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:26:14,683-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"0"}
+2018-12-29 17:26:14,688-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:26:14,693-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"0"}
+2018-12-29 17:26:14,699-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:26:14,703-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:26:14,709-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:26:14,714-INFO-http_log.py-my_logs-日志信息：api_name:loanId _error
+2018-12-29 17:26:14,719-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:26:14,723-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20403","data":null,"msg":"参数错误,标id必须是正整数"}
+2018-12-29 17:26:14,877-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 0, 'code': None, 'data': None, 'msg': '抱歉，请先登录。'}
+2018-12-29 17:26:14,882-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:26:14,888-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 参数错误,标id必须是正整数 != 抱歉，请先登录。
+2018-12-29 17:26:14,893-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:26:14,898-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:26:20,630-INFO-http_log.py-my_logs-日志信息：正在执行地7条用例; 用例名称:生成回款计划; 用例说明:项目id; 用例接口:loanId _error
+2018-12-29 17:26:20,635-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:26:20,640-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 17:26:20,645-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:26:20,650-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"-41"}
+2018-12-29 17:26:20,656-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:26:20,660-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"-41"}
+2018-12-29 17:26:20,665-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:26:20,669-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:26:20,674-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:26:20,679-INFO-http_log.py-my_logs-日志信息：api_name:loanId _error
+2018-12-29 17:26:20,684-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:26:20,690-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20403","data":null,"msg":"参数错误,标id必须是正整数"}
+2018-12-29 17:26:20,882-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 0, 'code': None, 'data': None, 'msg': '抱歉，请先登录。'}
+2018-12-29 17:26:20,888-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:26:20,893-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 参数错误,标id必须是正整数 != 抱歉，请先登录。
+2018-12-29 17:26:20,899-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:26:20,904-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:27:53,912-INFO-http_log.py-my_logs-日志信息：正在执行地1条用例; 用例名称:登录; 用例说明:登录成功; 用例接口:login_succeessful
+2018-12-29 17:27:53,921-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:27:53,927-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/login
+2018-12-29 17:27:53,932-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:27:53,937-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"15914223355","pwd":"1234567890"}
+2018-12-29 17:27:53,945-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:27:53,951-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"15914223355","pwd":"1234567890"}
+2018-12-29 17:27:53,957-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:27:53,962-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:27:53,970-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:27:53,977-INFO-http_log.py-my_logs-日志信息：api_name:login_succeessful
+2018-12-29 17:27:53,982-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:27:53,987-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2018-12-29 17:27:54,181-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2018-12-29 17:27:54,186-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:27:54,595-INFO-http_log.py-my_logs-日志信息：初始化数据--》回款计划暂未生成！
+2018-12-29 17:27:54,600-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 17:27:54,606-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:27:59,998-INFO-http_log.py-my_logs-日志信息：正在执行地3条用例; 用例名称:生成回款计划; 用例说明:项目id; 用例接口:loanId _error
+2018-12-29 17:28:00,003-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:28:00,008-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 17:28:00,014-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:28:00,020-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"1591422335509318312"}
+2018-12-29 17:28:00,024-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:28:00,029-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"1591422335509318312"}
+2018-12-29 17:28:00,034-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:28:00,039-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:28:00,043-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:28:00,048-INFO-http_log.py-my_logs-日志信息：api_name:loanId _error
+2018-12-29 17:28:00,053-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:28:00,059-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 17:28:00,168-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 0, 'code': '20406', 'data': None, 'msg': '请根据数值参数的类型对应输入合法的数字'}
+2018-12-29 17:28:00,172-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:28:00,177-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 17:28:00,182-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:28:05,883-INFO-http_log.py-my_logs-日志信息：正在执行地4条用例; 用例名称:生成回款计划; 用例说明:项目id; 用例接口:loanId _error
+2018-12-29 17:28:05,890-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:28:05,895-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 17:28:05,900-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:28:05,905-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"159"}
+2018-12-29 17:28:05,909-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:28:05,914-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"159"}
+2018-12-29 17:28:05,919-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:28:05,924-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:28:05,929-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:28:05,934-INFO-http_log.py-my_logs-日志信息：api_name:loanId _error
+2018-12-29 17:28:05,939-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:28:05,944-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20405","data":null,"msg":"不存在该项目，生成回款计划失败"}
+2018-12-29 17:28:06,059-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '不存在该项目，生成回款计划失败'}
+2018-12-29 17:28:06,066-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:28:06,073-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 17:28:06,081-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:28:11,253-INFO-http_log.py-my_logs-日志信息：正在执行地5条用例; 用例名称:生成回款计划; 用例说明:项目id为空; 用例接口:loanId_null
+2018-12-29 17:28:11,258-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:28:11,263-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 17:28:11,268-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:28:11,273-INFO-http_log.py-my_logs-日志信息：request_data:{"id":""}
+2018-12-29 17:28:11,278-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:28:11,282-INFO-http_log.py-my_logs-日志信息：request_data:{"id":""}
+2018-12-29 17:28:11,287-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:28:11,291-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:28:11,297-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:28:11,304-INFO-http_log.py-my_logs-日志信息：api_name:loanId_null
+2018-12-29 17:28:11,308-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:28:11,314-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20403","data":null,"msg":"所有参数不能为空"}
+2018-12-29 17:28:11,422-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 17:28:11,427-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:28:11,433-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 17:28:11,438-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:28:16,706-INFO-http_log.py-my_logs-日志信息：正在执行地6条用例; 用例名称:生成回款计划; 用例说明:项目id; 用例接口:loanId _error
+2018-12-29 17:28:16,711-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:28:16,718-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 17:28:16,723-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:28:16,728-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"0"}
+2018-12-29 17:28:16,733-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:28:16,739-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"0"}
+2018-12-29 17:28:16,744-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:28:16,748-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:28:16,753-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:28:16,758-INFO-http_log.py-my_logs-日志信息：api_name:loanId _error
+2018-12-29 17:28:16,763-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:28:16,769-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20403","data":null,"msg":"参数错误,标id必须是正整数"}
+2018-12-29 17:28:16,904-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '参数错误,标id必须是正整数'}
+2018-12-29 17:28:16,910-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:28:16,916-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 17:28:16,922-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:32:14,740-INFO-http_log.py-my_logs-日志信息：正在执行地1条用例; 用例名称:登录; 用例说明:登录成功; 用例接口:login_succeessful
+2018-12-29 17:32:14,749-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:32:14,755-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/login
+2018-12-29 17:32:14,760-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:32:14,766-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"15914223355","pwd":"1234567890"}
+2018-12-29 17:32:14,772-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:32:14,778-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"15914223355","pwd":"1234567890"}
+2018-12-29 17:32:14,783-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:32:14,788-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:32:14,793-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:32:14,798-INFO-http_log.py-my_logs-日志信息：api_name:login_succeessful
+2018-12-29 17:32:14,803-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:32:14,808-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"10001","data":null,"msg":"登录成功"}
+2018-12-29 17:32:15,071-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+2018-12-29 17:32:15,077-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:32:15,560-INFO-http_log.py-my_logs-日志信息：初始化数据--》回款计划暂未生成！
+2018-12-29 17:32:15,566-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 17:32:15,570-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:32:22,961-INFO-http_log.py-my_logs-日志信息：正在执行地3条用例; 用例名称:生成回款计划; 用例说明:项目id; 用例接口:loanId _error
+2018-12-29 17:32:22,967-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:32:22,972-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 17:32:22,977-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:32:22,983-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"1591422335509318312"}
+2018-12-29 17:32:22,987-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:32:22,992-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"1591422335509318312"}
+2018-12-29 17:32:22,998-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:32:23,003-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:32:23,008-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:32:23,014-INFO-http_log.py-my_logs-日志信息：api_name:loanId _error
+2018-12-29 17:32:23,019-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:32:23,027-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20406","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}
+2018-12-29 17:32:23,730-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 0, 'code': '20406', 'data': None, 'msg': '请根据数值参数的类型对应输入合法的数字'}
+2018-12-29 17:32:23,735-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:32:23,740-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 17:32:23,745-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:32:28,919-INFO-http_log.py-my_logs-日志信息：正在执行地4条用例; 用例名称:生成回款计划; 用例说明:项目id; 用例接口:loanId _error
+2018-12-29 17:32:28,924-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:32:28,930-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 17:32:28,935-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:32:28,940-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"159"}
+2018-12-29 17:32:28,944-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:32:28,949-INFO-http_log.py-my_logs-日志信息：request_data:{"id":"159"}
+2018-12-29 17:32:28,954-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:32:28,959-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:32:28,966-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:32:28,971-INFO-http_log.py-my_logs-日志信息：api_name:loanId _error
+2018-12-29 17:32:28,975-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:32:28,980-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20405","data":null,"msg":"不存在该项目，生成回款计划失败"}
+2018-12-29 17:32:29,151-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '不存在该项目，生成回款计划失败'}
+2018-12-29 17:32:29,156-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:32:29,163-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 17:32:29,169-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:32:34,615-INFO-http_log.py-my_logs-日志信息：正在执行地5条用例; 用例名称:生成回款计划; 用例说明:项目id为空; 用例接口:loanId_null
+2018-12-29 17:32:34,620-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:32:34,625-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/loan/generateRepayments
+2018-12-29 17:32:34,629-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:32:34,634-INFO-http_log.py-my_logs-日志信息：request_data:{"id":""}
+2018-12-29 17:32:34,640-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:32:34,645-INFO-http_log.py-my_logs-日志信息：request_data:{"id":""}
+2018-12-29 17:32:34,650-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:32:34,656-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:32:34,661-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:32:34,666-INFO-http_log.py-my_logs-日志信息：api_name:loanId_null
+2018-12-29 17:32:34,671-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:32:34,676-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"20403","data":null,"msg":"所有参数不能为空"}
+2018-12-29 17:32:34,768-INFO-http_log.py-my_logs-日志信息：实际结果:{'status': 1, 'code': '20403', 'data': None, 'msg': '所有参数不能为空'}
+2018-12-29 17:32:34,775-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:32:34,779-INFO-http_log.py-my_logs-日志信息：resultd的值是:pass
+2018-12-29 17:32:34,784-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:33:31,260-INFO-http_log.py-my_logs-日志信息：正在执行地1条用例; 用例名称:注册; 用例说明:成功注册-无昵称; 用例接口:login_succeessful
+2018-12-29 17:33:31,272-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:33:31,278-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/register
+2018-12-29 17:33:31,283-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:33:31,288-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"${tel_phone}","pwd":"${pwd}"}
+2018-12-29 17:33:31,293-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:33:31,298-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"18999999653","pwd":"1234567890"}
+2018-12-29 17:33:31,303-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:33:31,307-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:33:31,314-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:33:31,319-INFO-http_log.py-my_logs-日志信息：api_name:login_succeessful
+2018-12-29 17:33:31,325-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:33:31,329-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2018-12-29 17:33:31,453-INFO-http_log.py-my_logs-日志信息：实际结果:{"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2018-12-29 17:33:31,457-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:33:31,821-ERROR-http_log.py-my_logs-日志信息：断言错误:name 'sql_max_Phone' is not defined
+2018-12-29 17:33:31,826-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:33:31,831-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:33:36,758-INFO-http_log.py-my_logs-日志信息：正在执行地2条用例; 用例名称:注册; 用例说明:成功注册-有昵称; 用例接口:login_succeessful
+2018-12-29 17:33:36,763-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:33:36,768-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/register
+2018-12-29 17:33:36,773-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:33:36,778-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"${tel_phone}","pwd":"${pwd}","regname":"萧剑"}
+2018-12-29 17:33:36,783-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:33:36,788-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"18999999653","pwd":"1234567890","regname":"萧剑"}
+2018-12-29 17:33:36,793-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:33:36,798-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:33:36,803-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:33:36,809-INFO-http_log.py-my_logs-日志信息：api_name:login_succeessful
+2018-12-29 17:33:36,817-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:33:36,824-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2018-12-29 17:33:36,958-INFO-http_log.py-my_logs-日志信息：实际结果:{"status":0,"code":"20110","data":null,"msg":"手机号码已被注册"}
+2018-12-29 17:33:36,963-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:33:36,968-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 注册成功 != 手机号码已被注册
+2018-12-29 17:33:36,973-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:33:36,977-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:33:41,874-INFO-http_log.py-my_logs-日志信息：正在执行地3条用例; 用例名称:注册; 用例说明:成功注册-昵称过长; 用例接口:Nickname_long
+2018-12-29 17:33:41,878-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:33:41,884-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/register
+2018-12-29 17:33:41,889-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:33:41,895-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"18616223365","pwd":"${pwd}","regname":"xiaojian是，水电费撒旦法味儿阿萨德减肥呢未发生的阿萨德科技氛围USA打飞机安慰法士大夫就拉我客服阿斯蒂芬那是的"}
+2018-12-29 17:33:41,900-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:33:41,905-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"18616223365","pwd":"1234567890","regname":"xiaojian是，水电费撒旦法味儿阿萨德减肥呢未发生的阿萨德科技氛围USA打飞机安慰法士大夫就拉我客服阿斯蒂芬那是的"}
+2018-12-29 17:33:41,910-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:33:41,914-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:33:41,920-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:33:41,925-INFO-http_log.py-my_logs-日志信息：api_name:Nickname_long
+2018-12-29 17:33:41,930-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:33:41,935-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20102","data":null,"msg":"服务器异常"}
+2018-12-29 17:33:42,045-INFO-http_log.py-my_logs-日志信息：实际结果:{"status":0,"code":"20102","data":null,"msg":"服务器异常"}
+2018-12-29 17:33:42,050-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:33:42,250-ERROR-http_log.py-my_logs-日志信息：断言错误:name 'sql_max_Phone' is not defined
+2018-12-29 17:33:42,256-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:33:42,263-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:33:47,334-INFO-http_log.py-my_logs-日志信息：正在执行地4条用例; 用例名称:注册; 用例说明:用户名错误; 用例接口:user_error
+2018-12-29 17:33:47,340-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:33:47,344-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/register
+2018-12-29 17:33:47,350-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:33:47,355-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"18611","pwd":"${pwd}","regname":"萧剑"}
+2018-12-29 17:33:47,360-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:33:47,365-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"18611","pwd":"1234567890","regname":"萧剑"}
+2018-12-29 17:33:47,370-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:33:47,376-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:33:47,381-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:33:47,388-INFO-http_log.py-my_logs-日志信息：api_name:user_error
+2018-12-29 17:33:47,394-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:33:47,399-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2018-12-29 17:33:47,535-INFO-http_log.py-my_logs-日志信息：实际结果:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2018-12-29 17:33:47,540-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:33:47,748-ERROR-http_log.py-my_logs-日志信息：断言错误:name 'sql_max_Phone' is not defined
+2018-12-29 17:33:47,753-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:33:47,758-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:34:46,341-INFO-http_log.py-my_logs-日志信息：正在执行地1条用例; 用例名称:注册; 用例说明:成功注册-无昵称; 用例接口:login_succeessful
+2018-12-29 17:34:46,350-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:34:46,356-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/register
+2018-12-29 17:34:46,360-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:34:46,365-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"${tel_phone}","pwd":"${pwd}"}
+2018-12-29 17:34:46,370-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:34:46,376-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"18999999653","pwd":"1234567890"}
+2018-12-29 17:34:46,383-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:34:46,390-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:34:46,397-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:34:46,402-INFO-http_log.py-my_logs-日志信息：api_name:login_succeessful
+2018-12-29 17:34:46,407-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:34:46,411-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2018-12-29 17:34:46,665-INFO-http_log.py-my_logs-日志信息：实际结果:{"status":0,"code":"20110","data":null,"msg":"手机号码已被注册"}
+2018-12-29 17:34:46,670-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:34:46,675-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 注册成功 != 手机号码已被注册
+2018-12-29 17:34:46,680-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:34:46,685-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:34:51,624-INFO-http_log.py-my_logs-日志信息：正在执行地2条用例; 用例名称:注册; 用例说明:成功注册-有昵称; 用例接口:login_succeessful
+2018-12-29 17:34:51,631-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:34:51,638-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/register
+2018-12-29 17:34:51,642-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:34:51,647-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"${tel_phone}","pwd":"${pwd}","regname":"萧剑"}
+2018-12-29 17:34:51,654-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:34:51,666-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"18999999653","pwd":"1234567890","regname":"萧剑"}
+2018-12-29 17:34:51,672-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:34:51,679-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:34:51,687-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:34:51,693-INFO-http_log.py-my_logs-日志信息：api_name:login_succeessful
+2018-12-29 17:34:51,698-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:34:51,703-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":1,"code":"10001","data":null,"msg":"注册成功"}
+2018-12-29 17:34:51,863-INFO-http_log.py-my_logs-日志信息：实际结果:{"status":0,"code":"20110","data":null,"msg":"手机号码已被注册"}
+2018-12-29 17:34:51,869-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:34:51,873-ERROR-http_log.py-my_logs-日志信息：断言错误: :: 注册成功 != 手机号码已被注册
+2018-12-29 17:34:51,880-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:34:51,885-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:34:56,822-INFO-http_log.py-my_logs-日志信息：正在执行地3条用例; 用例名称:注册; 用例说明:成功注册-昵称过长; 用例接口:Nickname_long
+2018-12-29 17:34:56,830-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:34:56,836-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/register
+2018-12-29 17:34:56,843-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:34:56,849-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"18616223365","pwd":"${pwd}","regname":"xiaojian是，水电费撒旦法味儿阿萨德减肥呢未发生的阿萨德科技氛围USA打飞机安慰法士大夫就拉我客服阿斯蒂芬那是的"}
+2018-12-29 17:34:56,856-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:34:56,861-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"18616223365","pwd":"1234567890","regname":"xiaojian是，水电费撒旦法味儿阿萨德减肥呢未发生的阿萨德科技氛围USA打飞机安慰法士大夫就拉我客服阿斯蒂芬那是的"}
+2018-12-29 17:34:56,866-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:34:56,874-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:34:56,879-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:34:56,885-INFO-http_log.py-my_logs-日志信息：api_name:Nickname_long
+2018-12-29 17:34:56,890-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:34:56,894-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20102","data":null,"msg":"服务器异常"}
+2018-12-29 17:34:57,027-INFO-http_log.py-my_logs-日志信息：实际结果:{"status":0,"code":"20102","data":null,"msg":"服务器异常"}
+2018-12-29 17:34:57,032-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:34:57,231-ERROR-http_log.py-my_logs-日志信息：断言错误:name 'tel_phone' is not defined
+2018-12-29 17:34:57,236-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:34:57,241-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:35:02,186-INFO-http_log.py-my_logs-日志信息：正在执行地4条用例; 用例名称:注册; 用例说明:用户名错误; 用例接口:user_error
+2018-12-29 17:35:02,193-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:35:02,199-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/register
+2018-12-29 17:35:02,203-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:35:02,208-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"18611","pwd":"${pwd}","regname":"萧剑"}
+2018-12-29 17:35:02,214-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:35:02,221-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"18611","pwd":"1234567890","regname":"萧剑"}
+2018-12-29 17:35:02,226-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:35:02,231-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:35:02,236-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:35:02,242-INFO-http_log.py-my_logs-日志信息：api_name:user_error
+2018-12-29 17:35:02,248-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:35:02,253-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2018-12-29 17:35:02,342-INFO-http_log.py-my_logs-日志信息：实际结果:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2018-12-29 17:35:02,347-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:35:02,807-ERROR-http_log.py-my_logs-日志信息：断言错误:name 'tel_phone' is not defined
+2018-12-29 17:35:02,814-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:35:02,819-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:35:07,688-INFO-http_log.py-my_logs-日志信息：正在执行地5条用例; 用例名称:注册; 用例说明:用户名错误; 用例接口:user_error
+2018-12-29 17:35:07,695-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:35:07,701-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/register
+2018-12-29 17:35:07,705-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:35:07,710-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"18611223323423355","pwd":"${pwd}","regname":"萧剑"}
+2018-12-29 17:35:07,715-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:35:07,720-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"18611223323423355","pwd":"1234567890","regname":"萧剑"}
+2018-12-29 17:35:07,725-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:35:07,730-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:35:07,736-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:35:07,742-INFO-http_log.py-my_logs-日志信息：api_name:user_error
+2018-12-29 17:35:07,747-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:35:07,752-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2018-12-29 17:35:07,871-INFO-http_log.py-my_logs-日志信息：实际结果:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2018-12-29 17:35:07,876-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:35:08,199-ERROR-http_log.py-my_logs-日志信息：断言错误:name 'tel_phone' is not defined
+2018-12-29 17:35:08,204-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:35:08,209-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:35:13,116-INFO-http_log.py-my_logs-日志信息：正在执行地6条用例; 用例名称:注册; 用例说明:用户名错误; 用例接口:user_error
+2018-12-29 17:35:13,121-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:35:13,126-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/register
+2018-12-29 17:35:13,130-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:35:13,136-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"4-23=345","pwd":"${pwd}","regname":"萧剑"}
+2018-12-29 17:35:13,140-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:35:13,145-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"4-23=345","pwd":"1234567890","regname":"萧剑"}
+2018-12-29 17:35:13,150-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:35:13,155-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:35:13,160-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:35:13,167-INFO-http_log.py-my_logs-日志信息：api_name:user_error
+2018-12-29 17:35:13,175-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:35:13,180-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2018-12-29 17:35:13,316-INFO-http_log.py-my_logs-日志信息：实际结果:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2018-12-29 17:35:13,321-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:35:13,620-ERROR-http_log.py-my_logs-日志信息：断言错误:name 'tel_phone' is not defined
+2018-12-29 17:35:13,625-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:35:13,630-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:35:18,617-INFO-http_log.py-my_logs-日志信息：正在执行地7条用例; 用例名称:注册; 用例说明:用户名错误; 用例接口:user_error
+2018-12-29 17:35:18,623-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:35:18,628-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/register
+2018-12-29 17:35:18,633-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:35:18,638-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"sderwerwer","pwd":"${pwd}","regname":"萧剑"}
+2018-12-29 17:35:18,643-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:35:18,647-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"sderwerwer","pwd":"1234567890","regname":"萧剑"}
+2018-12-29 17:35:18,655-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:35:18,659-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:35:18,664-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:35:18,670-INFO-http_log.py-my_logs-日志信息：api_name:user_error
+2018-12-29 17:35:18,675-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:35:18,680-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2018-12-29 17:35:19,127-INFO-http_log.py-my_logs-日志信息：实际结果:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2018-12-29 17:35:19,134-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:35:19,852-ERROR-http_log.py-my_logs-日志信息：断言错误:name 'tel_phone' is not defined
+2018-12-29 17:35:19,857-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:35:19,862-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:35:24,931-INFO-http_log.py-my_logs-日志信息：正在执行地s条用例; 用例名称:注册; 用例说明:用户名错误; 用例接口:user_error
+2018-12-29 17:35:24,936-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:35:24,941-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/register
+2018-12-29 17:35:24,946-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:35:24,952-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"水电费而台湾人提问法","pwd":"${pwd}","regname":"萧剑"}
+2018-12-29 17:35:24,956-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:35:24,961-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"水电费而台湾人提问法","pwd":"1234567890","regname":"萧剑"}
+2018-12-29 17:35:24,966-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:35:24,971-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:35:24,975-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:35:24,981-INFO-http_log.py-my_logs-日志信息：api_name:user_error
+2018-12-29 17:35:24,988-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:35:24,993-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2018-12-29 17:35:25,147-INFO-http_log.py-my_logs-日志信息：实际结果:{"status":0,"code":"20109","data":null,"msg":"手机号码格式不正确"}
+2018-12-29 17:35:25,153-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:35:25,832-ERROR-http_log.py-my_logs-日志信息：断言错误:name 'tel_phone' is not defined
+2018-12-29 17:35:25,838-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:35:25,843-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:35:31,150-INFO-http_log.py-my_logs-日志信息：正在执行地9条用例; 用例名称:注册; 用例说明:用户名已注册; 用例接口:user_registered
+2018-12-29 17:35:31,157-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:35:31,162-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/register
+2018-12-29 17:35:31,168-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:35:31,173-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"15914223355","pwd":"${pwd}"}
+2018-12-29 17:35:31,179-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:35:31,185-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"15914223355","pwd":"1234567890"}
+2018-12-29 17:35:31,192-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:35:31,197-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:35:31,204-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:35:31,212-INFO-http_log.py-my_logs-日志信息：api_name:user_registered
+2018-12-29 17:35:31,221-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:35:31,228-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20110","data":null,"msg":"手机号码已被注册"}
+2018-12-29 17:35:31,590-INFO-http_log.py-my_logs-日志信息：实际结果:{"status":0,"code":"20110","data":null,"msg":"手机号码已被注册"}
+2018-12-29 17:35:31,595-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:35:31,880-ERROR-http_log.py-my_logs-日志信息：断言错误:name 'tel_phone' is not defined
+2018-12-29 17:35:31,886-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:35:31,890-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:35:36,930-INFO-http_log.py-my_logs-日志信息：正在执行地10条用例; 用例名称:注册; 用例说明:用户名为空; 用例接口:user_null
+2018-12-29 17:35:36,938-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:35:36,943-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/register
+2018-12-29 17:35:36,949-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:35:36,953-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"","pwd":"${pwd}","regname":"xiaojian"}
+2018-12-29 17:35:36,958-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:35:36,963-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"","pwd":"1234567890","regname":"xiaojian"}
+2018-12-29 17:35:36,968-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:35:36,974-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:35:36,979-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:35:36,985-INFO-http_log.py-my_logs-日志信息：api_name:user_null
+2018-12-29 17:35:36,990-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:35:36,999-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2018-12-29 17:35:37,100-INFO-http_log.py-my_logs-日志信息：实际结果:{"status":0,"code":"20103","data":null,"msg":"手机号不能为空"}
+2018-12-29 17:35:37,106-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:35:37,357-ERROR-http_log.py-my_logs-日志信息：断言错误:name 'tel_phone' is not defined
+2018-12-29 17:35:37,362-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:35:37,367-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:35:42,673-INFO-http_log.py-my_logs-日志信息：正在执行地11条用例; 用例名称:注册; 用例说明:密码长度小于6位; 用例接口:pwd_error
+2018-12-29 17:35:42,684-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:35:42,689-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/register
+2018-12-29 17:35:42,694-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:35:42,702-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"${tel_phone}","pwd":"12","regname":"萧剑"}
+2018-12-29 17:35:42,710-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:35:42,720-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"18999999653","pwd":"12","regname":"萧剑"}
+2018-12-29 17:35:42,725-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:35:42,730-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:35:42,735-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:35:42,742-INFO-http_log.py-my_logs-日志信息：api_name:pwd_error
+2018-12-29 17:35:42,748-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:35:42,754-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20103","data":null,"msg":"密码长度必须为6~18"}
+2018-12-29 17:35:42,841-INFO-http_log.py-my_logs-日志信息：实际结果:{"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"}
+2018-12-29 17:35:42,846-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:35:43,158-ERROR-http_log.py-my_logs-日志信息：断言错误:name 'tel_phone' is not defined
+2018-12-29 17:35:43,163-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:35:43,168-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:35:48,318-INFO-http_log.py-my_logs-日志信息：正在执行地12条用例; 用例名称:注册; 用例说明:密码长度大于18位; 用例接口:pwd_error
+2018-12-29 17:35:48,325-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:35:48,329-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/register
+2018-12-29 17:35:48,335-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:35:48,340-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"${tel_phone}","pwd":"1230457028340897230489723556452342342","regname":"萧剑"}
+2018-12-29 17:35:48,345-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:35:48,353-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"18999999653","pwd":"1230457028340897230489723556452342342","regname":"萧剑"}
+2018-12-29 17:35:48,359-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:35:48,363-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:35:48,369-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:35:48,375-INFO-http_log.py-my_logs-日志信息：api_name:pwd_error
+2018-12-29 17:35:48,380-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:35:48,385-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20103","data":null,"msg":"密码长度必须为6~18"}
+2018-12-29 17:35:48,481-INFO-http_log.py-my_logs-日志信息：实际结果:{"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"}
+2018-12-29 17:35:48,486-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:35:48,728-ERROR-http_log.py-my_logs-日志信息：断言错误:name 'tel_phone' is not defined
+2018-12-29 17:35:48,733-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:35:48,738-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:35:53,900-INFO-http_log.py-my_logs-日志信息：正在执行地13条用例; 用例名称:注册; 用例说明:密码长度必须为6~18（中文）; 用例接口:pwd_error
+2018-12-29 17:35:53,905-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:35:53,910-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/register
+2018-12-29 17:35:53,915-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:35:53,920-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"15909394312","pwd":"设配动画年末is东方网基恩人世间的访问路人是的可分配围绕片未及时的是的仆人服务而","regname":"萧剑"}
+2018-12-29 17:35:53,925-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:35:53,930-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"15909394312","pwd":"设配动画年末is东方网基恩人世间的访问路人是的可分配围绕片未及时的是的仆人服务而","regname":"萧剑"}
+2018-12-29 17:35:53,935-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:35:53,940-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:35:53,945-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:35:53,951-INFO-http_log.py-my_logs-日志信息：api_name:pwd_error
+2018-12-29 17:35:53,956-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:35:53,963-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20103","data":null,"msg":"密码长度必须为6~18"}
+2018-12-29 17:35:54,065-INFO-http_log.py-my_logs-日志信息：实际结果:{"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"}
+2018-12-29 17:35:54,070-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:35:54,305-ERROR-http_log.py-my_logs-日志信息：断言错误:name 'tel_phone' is not defined
+2018-12-29 17:35:54,310-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:35:54,316-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:35:59,537-INFO-http_log.py-my_logs-日志信息：正在执行地14条用例; 用例名称:注册; 用例说明:密码长度必须为6~18（符号）; 用例接口:pwd_error
+2018-12-29 17:35:59,542-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:35:59,547-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/register
+2018-12-29 17:35:59,552-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:35:59,557-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"${tel_phone}","pwd":"+#￥%*）@#￥%……&*（）——%……&……&*（（）（）（*%￥#","regname":"萧剑"}
+2018-12-29 17:35:59,563-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:35:59,569-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"18999999653","pwd":"+#￥%*）@#￥%……&*（）——%……&……&*（（）（）（*%￥#","regname":"萧剑"}
+2018-12-29 17:35:59,575-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:35:59,580-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:35:59,587-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:35:59,592-INFO-http_log.py-my_logs-日志信息：api_name:pwd_error
+2018-12-29 17:35:59,597-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:35:59,602-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20103","data":null,"msg":"密码长度必须为6~18"}
+2018-12-29 17:35:59,838-INFO-http_log.py-my_logs-日志信息：实际结果:{"status":0,"code":"20108","data":null,"msg":"密码长度必须为6~18"}
+2018-12-29 17:35:59,843-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:36:00,185-ERROR-http_log.py-my_logs-日志信息：断言错误:name 'tel_phone' is not defined
+2018-12-29 17:36:00,189-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:36:00,194-INFO-http_log.py-my_logs-日志信息：=================结束断言==================
+2018-12-29 17:36:05,362-INFO-http_log.py-my_logs-日志信息：正在执行地15条用例; 用例名称:注册; 用例说明:密码为空; 用例接口:pwd_null
+2018-12-29 17:36:05,367-INFO-http_log.py-my_logs-日志信息：================检查url====================
+2018-12-29 17:36:05,372-INFO-http_log.py-my_logs-日志信息：url:http://test.lemonban.com/futureloan/mvc/api/member/register
+2018-12-29 17:36:05,378-INFO-http_log.py-my_logs-日志信息：================检查request_data====================
+2018-12-29 17:36:05,384-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"${tel_phone}","pwd":"","regname":"简"}
+2018-12-29 17:36:05,389-INFO-http_log.py-my_logs-日志信息：================检查替换后的request_data====================
+2018-12-29 17:36:05,393-INFO-http_log.py-my_logs-日志信息：request_data:{"mobilephone":"18999999653","pwd":"","regname":"简"}
+2018-12-29 17:36:05,398-INFO-http_log.py-my_logs-日志信息：================检查method====================
+2018-12-29 17:36:05,403-INFO-http_log.py-my_logs-日志信息：method:GET
+2018-12-29 17:36:05,408-INFO-http_log.py-my_logs-日志信息：================检查api_name====================
+2018-12-29 17:36:05,414-INFO-http_log.py-my_logs-日志信息：api_name:pwd_null
+2018-12-29 17:36:05,419-INFO-http_log.py-my_logs-日志信息：================检查预期结果expected_data====================
+2018-12-29 17:36:05,423-INFO-http_log.py-my_logs-日志信息：expected_data:{"status":0,"code":"20103","data":null,"msg":"密码不能为空"}
+2018-12-29 17:36:05,522-INFO-http_log.py-my_logs-日志信息：实际结果:{"status":0,"code":"20103","data":null,"msg":"密码不能为空"}
+2018-12-29 17:36:05,527-INFO-http_log.py-my_logs-日志信息：=================开始断言==================
+2018-12-29 17:36:05,828-ERROR-http_log.py-my_logs-日志信息：断言错误:name 'tel_phone' is not defined
+2018-12-29 17:36:05,834-INFO-http_log.py-my_logs-日志信息：resultd的值是:failed
+2018-12-29 17:36:05,840-INFO-http_log.py-my_logs-日志信息：=================结束断言==================

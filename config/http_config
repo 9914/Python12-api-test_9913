@@ -1,0 +1,21 @@
+[CASE]
+#button=all
+button=[1,2]
+[LOG]
+logger_name=my_logs
+log_level=DEBUG
+handler_level=ERROR
+file__level=DEBUG
+formatter = %%(asctime)s-%%(levelname)s-%%(filename)s-%%(name)s-日志信息：%%(message)s
+
+[URL]
+url_date=http://120.78.128.25:8080/futureloan/mvc/api
+
+[MYSQL]
+Host_name=120.78.128.25
+port=3306
+username=futurevistor
+password=123456
+
+[SQL]
+sql=select MobilePhone from future.member WHERE MobilePhone != "" ORDER BY MobilePhone DESC LIMIT 1

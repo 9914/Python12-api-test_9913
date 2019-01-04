@@ -1,0 +1,1027 @@
+2019-01-03 11:44:28,860-ERROR-http_log.py-error[line:95]my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 100, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 11:45:23,543-ERROR-http_log.py-error[line:95]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 100, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 11:46:11,676-ERROR-http_log.py-error[line:95]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 100, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 11:47:08,677-ERROR-http_log.py-error[line:95]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 100, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 11:47:44,864-ERROR-http_log.py-error[line:95]-my_logs-日志信息：error!!!!
+NoneType: None
+2019-01-03 11:50:56,565-ERROR-http_log.py-error[line:93]-my_logs-日志信息：error!!!!
+NoneType: None
+2019-01-03 11:51:44,461-ERROR-http_log.py-error[line:93]-my_logs-日志信息：error!!!!
+NoneType: None
+2019-01-03 11:52:21,152-ERROR-http_log.py-error[line:93]-my_logs-日志信息：error!!!!
+NoneType: None
+2019-01-03 11:52:55,875-ERROR-http_log.py-error[line:93]-my_logs-日志信息：error!!!!
+NoneType: None
+2019-01-03 11:53:44,990-ERROR-http_log.py-error[line:93]-my_logs-日志信息：error!!!!
+NoneType: None
+2019-01-03 11:53:54,294-ERROR-http_log.py-s[line:93]-my_logs-日志信息：error!!!!
+NoneType: None
+2019-01-03 11:54:14,791-ERROR-http_log.py-error[line:93]-my_logs-日志信息：error!!!!
+NoneType: None
+2019-01-03 11:54:54,659-ERROR-http_log.py-error[line:93]-my_logs-日志信息：error!!!!
+NoneType: None
+2019-01-03 11:56:53,262-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+NoneType: None
+2019-01-03 11:59:29,990-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 20405 != 20403
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '20405' != '20403'
+- 20405
+?     ^
++ 20403
+?     ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_10_Repayments_Test_case.py", line 77, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['code'],json.loads(res.get_text())['code'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 20405 != 20403
+2019-01-03 12:04:05,054-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 20405 != 20403
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '20405' != '20403'
+- 20405
+?     ^
++ 20403
+?     ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_10_Repayments_Test_case.py", line 77, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['code'],json.loads(res.get_text())['code'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 20405 != 20403
+2019-01-03 12:04:45,995-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误:(2013, 'Lost connection to MySQL server during query')
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_10_Repayments_Test_case.py", line 88, in test_http_case
+    new_back_plan = MysqlUtill().get_fetch_all(sql=sql)
+  File "D:\Documents\Python12-api-test_9913\common\mysql.py", line 32, in __init__
+    raise e
+  File "D:\Documents\Python12-api-test_9913\common\mysql.py", line 28, in __init__
+    database='future',port=port,cursorclass=pymysql.cursors.DictCursor)
+  File "D:\Python\Python37-32\lib\site-packages\pymysql\__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "D:\Python\Python37-32\lib\site-packages\pymysql\connections.py", line 325, in __init__
+    self.connect()
+  File "D:\Python\Python37-32\lib\site-packages\pymysql\connections.py", line 599, in connect
+    self._request_authentication()
+  File "D:\Python\Python37-32\lib\site-packages\pymysql\connections.py", line 861, in _request_authentication
+    auth_packet = self._read_packet()
+  File "D:\Python\Python37-32\lib\site-packages\pymysql\connections.py", line 657, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\Python\Python37-32\lib\site-packages\pymysql\connections.py", line 707, in _read_bytes
+    CR.CR_SERVER_LOST, "Lost connection to MySQL server during query")
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query')
+2019-01-03 14:03:02,854-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 20405 != 20403
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '20405' != '20403'
+- 20405
+?     ^
++ 20403
+?     ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_10_Repayments_Test_case.py", line 77, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['code'],json.loads(res.get_text())['code'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 20405 != 20403
+2019-01-03 14:05:24,872-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 20405 != 20403
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '20405' != '20403'
+- 20405
+?     ^
++ 20403
+?     ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_10_Repayments_Test_case.py", line 77, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['code'],json.loads(res.get_text())['code'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 20405 != 20403
+2019-01-03 14:07:17,155-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:08:13,115-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:11:03,374-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:11:26,033-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:18:01,569-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:18:23,342-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:19:02,156-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:19:19,252-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:19:39,343-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:19:56,453-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:20:04,593-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:20:38,727-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:23:22,539-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:24:50,355-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:25:59,573-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:26:07,647-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:26:55,395-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:35:46,834-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:38:31,818-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:40:48,959-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+NoneType: None
+2019-01-03 14:48:34,338-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+NoneType: None
+2019-01-03 14:48:54,053-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+NoneType: None
+2019-01-03 14:51:07,191-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+NoneType: None
+2019-01-03 14:51:18,034-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+NoneType: None
+2019-01-03 14:53:02,971-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:53:48,433-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 14:58:21,546-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 30104 != 10001
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '30104' != '10001'
+- 30104
++ 10001
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_11_ByMemberId_test_case.py", line 81, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['code'],json.loads(res.get_text())['code'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 30104 != 10001
+2019-01-03 14:58:33,150-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 30104 != 10001
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '30104' != '10001'
+- 30104
++ 10001
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_11_ByMemberId_test_case.py", line 81, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['code'],json.loads(res.get_text())['code'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 30104 != 10001
+2019-01-03 14:58:38,347-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 30104 != 10001
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '30104' != '10001'
+- 30104
++ 10001
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_11_ByMemberId_test_case.py", line 81, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['code'],json.loads(res.get_text())['code'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 30104 != 10001
+2019-01-03 15:05:49,281-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误:the JSON object must be str, bytes or bytearray, not list
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_11_ByMemberId_test_case.py", line 89, in test_http_case
+    elif json.loads(all_ment)['Id'] not in json.loads(Investment_all)['Id']:
+  File "D:\Python\Python37-32\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list
+2019-01-03 15:06:02,617-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误:the JSON object must be str, bytes or bytearray, not list
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_11_ByMemberId_test_case.py", line 89, in test_http_case
+    elif json.loads(all_ment)['Id'] not in json.loads(Investment_all)['Id']:
+  File "D:\Python\Python37-32\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list
+2019-01-03 15:07:57,439-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误:list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_11_ByMemberId_test_case.py", line 89, in test_http_case
+    elif all_ment['Id'] not in Investment_all['Id']:
+TypeError: list indices must be integers or slices, not str
+2019-01-03 15:08:11,047-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误:list indices must be integers or slices, not str
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_11_ByMemberId_test_case.py", line 89, in test_http_case
+    elif all_ment['Id'] not in Investment_all['Id']:
+TypeError: list indices must be integers or slices, not str
+2019-01-03 15:14:46,093-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 15:16:06,596-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 15:17:06,379-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 15:17:28,665-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 15:17:42,856-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 15:18:08,929-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 15:23:06,121-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: {'Id': 19} != [{'Id': 19},
+ {'Id': 18},
+ {'Id': 17},
+ {'Id': 16},
+ {'Id': 15},
+ {'Id': 14},
+ {'Id': 13},
+ {'Id': 12},
+ {'Id': 11},
+ {'Id': 10}]
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: {'Id': 19} != [{'Id': 19}, {'Id': 18}, {'Id': 17}, {'Id[74 chars] 10}]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_10_Repayments_Test_case.py", line 92, in test_http_case
+    raise e
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_10_Repayments_Test_case.py", line 88, in test_http_case
+    self.assertEqual(Money_back_plan,new_back_plan)
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: {'Id': 19} != [{'Id': 19},
+ {'Id': 18},
+ {'Id': 17},
+ {'Id': 16},
+ {'Id': 15},
+ {'Id': 14},
+ {'Id': 13},
+ {'Id': 12},
+ {'Id': 11},
+ {'Id': 10}]
+2019-01-03 15:23:14,126-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: {'Id': 19} != [{'Id': 19},
+ {'Id': 18},
+ {'Id': 17},
+ {'Id': 16},
+ {'Id': 15},
+ {'Id': 14},
+ {'Id': 13},
+ {'Id': 12},
+ {'Id': 11},
+ {'Id': 10}]
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: {'Id': 19} != [{'Id': 19}, {'Id': 18}, {'Id': 17}, {'Id[74 chars] 10}]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_10_Repayments_Test_case.py", line 92, in test_http_case
+    raise e
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_10_Repayments_Test_case.py", line 88, in test_http_case
+    self.assertEqual(Money_back_plan,new_back_plan)
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: {'Id': 19} != [{'Id': 19},
+ {'Id': 18},
+ {'Id': 17},
+ {'Id': 16},
+ {'Id': 15},
+ {'Id': 14},
+ {'Id': 13},
+ {'Id': 12},
+ {'Id': 11},
+ {'Id': 10}]
+2019-01-03 15:23:21,590-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: {'Id': 19} != [{'Id': 19},
+ {'Id': 18},
+ {'Id': 17},
+ {'Id': 16},
+ {'Id': 15},
+ {'Id': 14},
+ {'Id': 13},
+ {'Id': 12},
+ {'Id': 11},
+ {'Id': 10}]
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: {'Id': 19} != [{'Id': 19}, {'Id': 18}, {'Id': 17}, {'Id[74 chars] 10}]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_10_Repayments_Test_case.py", line 92, in test_http_case
+    raise e
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_10_Repayments_Test_case.py", line 88, in test_http_case
+    self.assertEqual(Money_back_plan,new_back_plan)
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: {'Id': 19} != [{'Id': 19},
+ {'Id': 18},
+ {'Id': 17},
+ {'Id': 16},
+ {'Id': 15},
+ {'Id': 14},
+ {'Id': 13},
+ {'Id': 12},
+ {'Id': 11},
+ {'Id': 10}]
+2019-01-03 15:23:27,239-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: {'Id': 19} != [{'Id': 19},
+ {'Id': 18},
+ {'Id': 17},
+ {'Id': 16},
+ {'Id': 15},
+ {'Id': 14},
+ {'Id': 13},
+ {'Id': 12},
+ {'Id': 11},
+ {'Id': 10}]
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: {'Id': 19} != [{'Id': 19}, {'Id': 18}, {'Id': 17}, {'Id[74 chars] 10}]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_10_Repayments_Test_case.py", line 92, in test_http_case
+    raise e
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_10_Repayments_Test_case.py", line 88, in test_http_case
+    self.assertEqual(Money_back_plan,new_back_plan)
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: {'Id': 19} != [{'Id': 19},
+ {'Id': 18},
+ {'Id': 17},
+ {'Id': 16},
+ {'Id': 15},
+ {'Id': 14},
+ {'Id': 13},
+ {'Id': 12},
+ {'Id': 11},
+ {'Id': 10}]
+2019-01-03 15:23:32,847-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: {'Id': 19} != [{'Id': 19},
+ {'Id': 18},
+ {'Id': 17},
+ {'Id': 16},
+ {'Id': 15},
+ {'Id': 14},
+ {'Id': 13},
+ {'Id': 12},
+ {'Id': 11},
+ {'Id': 10}]
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: {'Id': 19} != [{'Id': 19}, {'Id': 18}, {'Id': 17}, {'Id[74 chars] 10}]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_10_Repayments_Test_case.py", line 92, in test_http_case
+    raise e
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_10_Repayments_Test_case.py", line 88, in test_http_case
+    self.assertEqual(Money_back_plan,new_back_plan)
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: {'Id': 19} != [{'Id': 19},
+ {'Id': 18},
+ {'Id': 17},
+ {'Id': 16},
+ {'Id': 15},
+ {'Id': 14},
+ {'Id': 13},
+ {'Id': 12},
+ {'Id': 11},
+ {'Id': 10}]
+2019-01-03 15:24:23,623-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 15:24:44,354-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 15:28:08,926-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：error!!!!
+Traceback (most recent call last):
+  File "D:/Documents/Python12-api-test_9913/common/http_log.py", line 98, in <module>
+    raise AssertionError
+AssertionError
+2019-01-03 15:28:47,972-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: {'Id': 19} != [{'Id': 19},
+ {'Id': 18},
+ {'Id': 17},
+ {'Id': 16},
+ {'Id': 15},
+ {'Id': 14},
+ {'Id': 13},
+ {'Id': 12},
+ {'Id': 11},
+ {'Id': 10}]
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: {'Id': 19} != [{'Id': 19}, {'Id': 18}, {'Id': 17}, {'Id[74 chars] 10}]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_10_Repayments_Test_case.py", line 94, in test_http_case
+    raise e
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_10_Repayments_Test_case.py", line 90, in test_http_case
+    self.assertEqual(Money_back_plan,new_back_plan)
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: {'Id': 19} != [{'Id': 19},
+ {'Id': 18},
+ {'Id': 17},
+ {'Id': 16},
+ {'Id': 15},
+ {'Id': 14},
+ {'Id': 13},
+ {'Id': 12},
+ {'Id': 11},
+ {'Id': 10}]
+2019-01-03 15:29:01,992-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: {'Id': 19} != [{'Id': 19},
+ {'Id': 18},
+ {'Id': 17},
+ {'Id': 16},
+ {'Id': 15},
+ {'Id': 14},
+ {'Id': 13},
+ {'Id': 12},
+ {'Id': 11},
+ {'Id': 10}]
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: {'Id': 19} != [{'Id': 19}, {'Id': 18}, {'Id': 17}, {'Id[74 chars] 10}]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_10_Repayments_Test_case.py", line 94, in test_http_case
+    raise e
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_10_Repayments_Test_case.py", line 90, in test_http_case
+    self.assertEqual(Money_back_plan,new_back_plan)
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: {'Id': 19} != [{'Id': 19},
+ {'Id': 18},
+ {'Id': 17},
+ {'Id': 16},
+ {'Id': 15},
+ {'Id': 14},
+ {'Id': 13},
+ {'Id': 12},
+ {'Id': 11},
+ {'Id': 10}]
+2019-01-03 15:49:31,524-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 30104 != 10001
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '30104' != '10001'
+- 30104
++ 10001
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_11_ByMemberId_test_case.py", line 81, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['code'],json.loads(res.get_text())['code'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 30104 != 10001
+2019-01-03 15:49:42,159-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 30104 != 10001
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '30104' != '10001'
+- 30104
++ 10001
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_11_ByMemberId_test_case.py", line 81, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['code'],json.loads(res.get_text())['code'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 30104 != 10001
+2019-01-03 15:49:47,561-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 30104 != 10001
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '30104' != '10001'
+- 30104
++ 10001
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_11_ByMemberId_test_case.py", line 81, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['code'],json.loads(res.get_text())['code'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 30104 != 10001
+2019-01-03 16:00:23,325-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 30204 != 10001
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '30204' != '10001'
+- 30204
++ 10001
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_12_ByLoandId_test_case.py", line 71, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['code'],json.loads(res.get_text())['code'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 30204 != 10001
+2019-01-03 16:00:31,458-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 30204 != 10001
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '30204' != '10001'
+- 30204
++ 10001
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_12_ByLoandId_test_case.py", line 71, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['code'],json.loads(res.get_text())['code'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 30204 != 10001
+2019-01-03 16:07:08,460-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 30204 != 10001
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '30204' != '10001'
+- 30204
++ 10001
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_12_ByLoandId_test_case.py", line 71, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['code'],json.loads(res.get_text())['code'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 30204 != 10001
+2019-01-03 16:07:14,406-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 30204 != 10001
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '30204' != '10001'
+- 30204
++ 10001
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_12_ByLoandId_test_case.py", line 71, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['code'],json.loads(res.get_text())['code'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 30204 != 10001
+2019-01-03 16:13:46,271-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 登录成功 != 用户名或密码错误
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '登录成功' != '用户名或密码错误'
+- 登录成功
++ 用户名或密码错误
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_13_LogList_test_case.py", line 71, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['msg'],json.loads(res.get_text())['msg'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 登录成功 != 用户名或密码错误
+2019-01-03 16:13:51,537-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 成功 != 抱歉，请先登录。
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '成功' != '抱歉，请先登录。'
+- 成功
++ 抱歉，请先登录。
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_13_LogList_test_case.py", line 71, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['msg'],json.loads(res.get_text())['msg'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 成功 != 抱歉，请先登录。
+2019-01-03 16:14:31,830-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 10001 != 20111
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '10001' != '20111'
+- 10001
++ 20111
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_13_LogList_test_case.py", line 71, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['code'],json.loads(res.get_text())['code'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 10001 != 20111
+2019-01-03 16:14:37,401-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 10001 != None
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '10001' != None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_13_LogList_test_case.py", line 71, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['code'],json.loads(res.get_text())['code'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 10001 != None
+2019-01-03 16:14:42,573-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 50104 != None
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '50104' != None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_13_LogList_test_case.py", line 71, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['code'],json.loads(res.get_text())['code'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 50104 != None
+2019-01-03 16:14:47,845-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 50106 != None
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '50106' != None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_13_LogList_test_case.py", line 71, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['code'],json.loads(res.get_text())['code'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 50106 != None
+2019-01-03 16:14:54,938-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 50103 != None
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: '50103' != None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_13_LogList_test_case.py", line 71, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['code'],json.loads(res.get_text())['code'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 50103 != None
+2019-01-03 16:54:09,797-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 20109 != 20103
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 1220, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 680, in fail
+    raise self.failureException(msg)
+AssertionError: '20109' != '20103'
+- 20109
+?     ^
++ 20103
+?     ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_03_Rechanrge_test_case.py", line 81, in test_http_case
+    self.assertEqual(json.loads(i.expected_data)['code'],json.loads(res.get_text())['code'])
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 20109 != 20103
+2019-01-03 16:54:35,460-ERROR-http_log.py-error-[line:93]-my_logs-日志信息：断言错误: :: 0 != 1
+Traceback (most recent call last):
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 839, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "D:\Python\Python37-32\lib\unittest\case.py", line 832, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_03_Rechanrge_test_case.py", line 119, in test_http_case
+    raise e
+  File "D:\Documents\Python12-api-test_9913\Interface_API\A_03_Rechanrge_test_case.py", line 115, in test_http_case
+    self.assertEqual(int(self.LeaveAmount["LeaveAmount"]), int(mou["LeaveAmount"]))  # 判断余额是否正确
+  File "D:\PyCharm Community Edition 2018.3.1\helpers\pycharm\teamcity\diff_tools.py", line 38, in _patched_equals
+    raise error
+teamcity.diff_tools.EqualsAssertionError:  :: 0 != 1

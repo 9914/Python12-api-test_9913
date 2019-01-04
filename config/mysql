@@ -1,0 +1,71 @@
+[URL]
+url_date=http://test.lemonban.com/futureloan/mvc/api
+
+[MYSQL]
+Host_name=db.lemonban.com
+port=3306
+user=test
+pwd=test
+
+[CASE]
+button=all
+#button=[1,40]
+[LOG]
+logger_name=my_logs
+log_level=DEBUG
+handler_level=ERROR
+info_level=INFO
+error_level=ERROR
+report_level=INFO
+formatter = %%(asctime)s-%%(levelname)s-%%(filename)s-%%(funcName)s-[line:%%(lineno)d]-%%(name)s-日志信息：%%(message)s
+
+[BASIC]
+#借款人用户
+normal_uesr=18999999653
+#投资人用户
+Income_name=15909318312
+#审核用户
+audit_user=15914223355
+pwd=1234567890
+
+[SQL]
+#获取最大手机号码
+sql_max_Phone=select MobilePhone from future.member WHERE MobilePhone != "" ORDER BY MobilePhone DESC LIMIT 1
+#借款人用户ID
+sql_PayMemberId=SELECT Id FROM member WHERE member.MobilePhone =18999999653
+#投资人用户ID
+sql_IncomeMemberId=SELECT Id FROM member WHERE member.MobilePhone =15909318312
+#借款人所有项目ID
+sql_LoanId=SELECT Id FROM loan WHERE MemberID =(SELECT Id  FROM member WHERE MobilePhone = 18999999653)
+#借款人最新项目ID
+new_LoanId=SELECT Id FROM loan WHERE MemberID =(SELECT Id  FROM member WHERE MobilePhone = 18999999653)ORDER BY Id DESC LIMIT 1
+#借款人账户余额
+Pay_LeaveAmount=SELECT LeaveAmount FROM member WHERE MobilePhone = 18999999653
+#投资人账户余额
+Income_LeaveAmount=SELECT LeaveAmount FROM member WHERE MobilePhone = 15909318312
+#项目金额
+poject_Amount=SELECT Amount FROM loan  WHERE ID = 7917;
+#最新一条项目ID
+#sql_anId=SELECT Id FROM loan WHERE MemberID =(SELECT Id  FROM member WHERE MobilePhone = 18999999653) ORDER BY Id DESC LIMIT 1
+sql_anId=SELECT Id FROM loan WHERE Id = 7917
+#满标的项目ID
+Full_mark=SELECT Id FROM loan  WHERE MemberID =(SELECT Id FROM member WHERE MobilePhone = 18999999653) AND `Status` in (5,6)
+#最新一条项目的状态
+Status=SELECT `Status` FROM loan WHERE Id = 7917
+#Status=SELECT Id FROM loan WHERE MemberID =(SELECT Id  FROM member WHERE MobilePhone = 18999999653) ORDER BY Id DESC LIMIT 1
+#借款人所有流水记录
+normal_record=SELECT Id FROM financelog WHERE PayMemberId =(SELECT Id FROM member WHERE MobilePhone = 18999999653) or IncomeMemberId =(SELECT Id FROM member WHERE MobilePhone = 18999999653) ORDER BY Id DESC
+#投资人所有流水记录
+Income_record=SELECT Id FROM financelog WHERE IncomeMemberId =(SELECT Id FROM member WHERE MobilePhone = 15909318312) or PayMemberId =(SELECT Id FROM member WHERE MobilePhone = 15909318312)ORDER BY Id DESC
+#投资人对当前项目的最新一条投资记录
+Investment_new=SELECT Id FROM invest WHERE MemberID =(SELECT Id FROM member WHERE MobilePhone = 15909318312) and loanId=(SELECT Id FROM loan  WHERE MemberID =(SELECT Id FROM member WHERE MobilePhone = 18999999653)) ORDER BY Id DESC LIMIT 1
+#投资人对当前项目的所有投资记录
+Investment_record_all=SELECT Id FROM invest WHERE MemberID =(SELECT Id FROM member WHERE MobilePhone = 15909318312) and loanId=7917
+#投资人的所有投资记录
+Investment_all=SELECT Id FROM invest WHERE MemberID =(SELECT Id FROM member WHERE MobilePhone = 15909318312) AND IsValid = 1 ORDER BY Id DESC
+#标的所有投资记录
+mark_record=SELECT Id FROM invest WHERE loanId =  7917 AND IsValid = 1 ORDER BY Id DESC;
+#mark_record=SELECT Id FROM invest WHERE loanId=(SELECT Id FROM loan  WHERE MemberID =(SELECT Id FROM member WHERE MobilePhone = 18999999653))
+#回款计划
+Money_back_plan=SELECT Id FROM repayment WHERE InvestId in (SELECT ID FROM invest WHERE MemberID =(SELECT Id FROM member WHERE MobilePhone = 15909318312) or LoanId in(SELECT Id FROM loan WHERE MemberID = (SELECT Id FROM member WHERE MobilePhone = 18999999653))) ORDER BY Id DESC
+
